@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -51,11 +52,21 @@
             label2.Text = "sathsara";
             label2.Click += label2_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(532, 106);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 20);
+            label3.TabIndex = 2;
+            label3.Text = "label3";
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form2";
@@ -68,5 +79,6 @@
 
         private Label label1;
         private Label label2;
+        private Label label3;
     }
 }
