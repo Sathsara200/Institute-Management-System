@@ -105,13 +105,13 @@
             buttonRegister.FlatAppearance.MouseOverBackColor = Color.White;
             buttonRegister.FlatStyle = FlatStyle.Flat;
             buttonRegister.ForeColor = Color.White;
-            buttonRegister.Image = (Image)resources.GetObject("buttonRegister.Image");
+            buttonRegister.Image = Properties.Resources.report1;
             buttonRegister.ImageAlign = ContentAlignment.MiddleLeft;
             buttonRegister.Location = new Point(0, 338);
             buttonRegister.Name = "buttonRegister";
             buttonRegister.Size = new Size(258, 69);
             buttonRegister.TabIndex = 0;
-            buttonRegister.Text = "  Register";
+            buttonRegister.Text = "  Report";
             buttonRegister.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonRegister.UseVisualStyleBackColor = true;
             // 
@@ -124,15 +124,16 @@
             buttonReport.FlatAppearance.MouseOverBackColor = Color.White;
             buttonReport.FlatStyle = FlatStyle.Flat;
             buttonReport.ForeColor = Color.White;
-            buttonReport.Image = Properties.Resources.report;
+            buttonReport.Image = Properties.Resources.te;
             buttonReport.ImageAlign = ContentAlignment.MiddleLeft;
             buttonReport.Location = new Point(0, 269);
             buttonReport.Name = "buttonReport";
             buttonReport.Size = new Size(258, 69);
             buttonReport.TabIndex = 0;
-            buttonReport.Text = "  Report";
+            buttonReport.Text = "  Teachers";
             buttonReport.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonReport.UseVisualStyleBackColor = true;
+            buttonReport.Click += buttonReport_Click;
             // 
             // buttonAddStudents
             // 
@@ -149,7 +150,7 @@
             buttonAddStudents.Name = "buttonAddStudents";
             buttonAddStudents.Size = new Size(258, 59);
             buttonAddStudents.TabIndex = 0;
-            buttonAddStudents.Text = "  Add Students";
+            buttonAddStudents.Text = "  Students";
             buttonAddStudents.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonAddStudents.UseVisualStyleBackColor = true;
             // 

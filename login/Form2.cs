@@ -42,5 +42,15 @@ namespace login
         {
 
         }
+
+        private void buttonAddStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
