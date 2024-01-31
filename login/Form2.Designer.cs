@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             panel1 = new Panel();
             panel7 = new Panel();
+            buttonRegister = new Button();
+            buttonReport = new Button();
             buttonAddStudents = new Button();
             buttonAddClass = new Button();
             buttonAttendance = new Button();
@@ -55,8 +57,6 @@
             label7 = new Label();
             label5 = new Label();
             label4 = new Label();
-            buttonReport = new Button();
-            buttonRegister = new Button();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
             panel2.SuspendLayout();
@@ -95,6 +95,44 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(258, 493);
             panel7.TabIndex = 2;
+            // 
+            // buttonRegister
+            // 
+            buttonRegister.Dock = DockStyle.Top;
+            buttonRegister.FlatAppearance.BorderColor = Color.White;
+            buttonRegister.FlatAppearance.BorderSize = 0;
+            buttonRegister.FlatAppearance.MouseDownBackColor = Color.White;
+            buttonRegister.FlatAppearance.MouseOverBackColor = Color.White;
+            buttonRegister.FlatStyle = FlatStyle.Flat;
+            buttonRegister.ForeColor = Color.White;
+            buttonRegister.Image = (Image)resources.GetObject("buttonRegister.Image");
+            buttonRegister.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonRegister.Location = new Point(0, 338);
+            buttonRegister.Name = "buttonRegister";
+            buttonRegister.Size = new Size(258, 69);
+            buttonRegister.TabIndex = 0;
+            buttonRegister.Text = "  Register";
+            buttonRegister.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonRegister.UseVisualStyleBackColor = true;
+            // 
+            // buttonReport
+            // 
+            buttonReport.Dock = DockStyle.Top;
+            buttonReport.FlatAppearance.BorderColor = Color.White;
+            buttonReport.FlatAppearance.BorderSize = 0;
+            buttonReport.FlatAppearance.MouseDownBackColor = Color.White;
+            buttonReport.FlatAppearance.MouseOverBackColor = Color.White;
+            buttonReport.FlatStyle = FlatStyle.Flat;
+            buttonReport.ForeColor = Color.White;
+            buttonReport.Image = Properties.Resources.report;
+            buttonReport.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonReport.Location = new Point(0, 269);
+            buttonReport.Name = "buttonReport";
+            buttonReport.Size = new Size(258, 69);
+            buttonReport.TabIndex = 0;
+            buttonReport.Text = "  Report";
+            buttonReport.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonReport.UseVisualStyleBackColor = true;
             // 
             // buttonAddStudents
             // 
@@ -403,44 +441,6 @@
             label4.Size = new Size(127, 27);
             label4.TabIndex = 0;
             label4.Text = "Welcome:";
-            // 
-            // buttonReport
-            // 
-            buttonReport.Dock = DockStyle.Top;
-            buttonReport.FlatAppearance.BorderColor = Color.White;
-            buttonReport.FlatAppearance.BorderSize = 0;
-            buttonReport.FlatAppearance.MouseDownBackColor = Color.White;
-            buttonReport.FlatAppearance.MouseOverBackColor = Color.White;
-            buttonReport.FlatStyle = FlatStyle.Flat;
-            buttonReport.ForeColor = Color.White;
-            buttonReport.Image = Properties.Resources.report;
-            buttonReport.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonReport.Location = new Point(0, 269);
-            buttonReport.Name = "buttonReport";
-            buttonReport.Size = new Size(258, 69);
-            buttonReport.TabIndex = 0;
-            buttonReport.Text = "  Report";
-            buttonReport.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonReport.UseVisualStyleBackColor = true;
-            // 
-            // buttonRegister
-            // 
-            buttonRegister.Dock = DockStyle.Top;
-            buttonRegister.FlatAppearance.BorderColor = Color.White;
-            buttonRegister.FlatAppearance.BorderSize = 0;
-            buttonRegister.FlatAppearance.MouseDownBackColor = Color.White;
-            buttonRegister.FlatAppearance.MouseOverBackColor = Color.White;
-            buttonRegister.FlatStyle = FlatStyle.Flat;
-            buttonRegister.ForeColor = Color.White;
-            buttonRegister.Image = Properties.Resources.reg;
-            buttonRegister.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonRegister.Location = new Point(0, 338);
-            buttonRegister.Name = "buttonRegister";
-            buttonRegister.Size = new Size(258, 69);
-            buttonRegister.TabIndex = 0;
-            buttonRegister.Text = "  Register";
-            buttonRegister.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonRegister.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
