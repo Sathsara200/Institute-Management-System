@@ -45,10 +45,10 @@
             panel3 = new Panel();
             panel2 = new Panel();
             panel4 = new Panel();
+            textBox1 = new TextBox();
             label4 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
-            textBox1 = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -255,6 +255,15 @@
             panel4.Size = new Size(942, 92);
             panel4.TabIndex = 1;
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(658, 31);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Search for student details";
+            textBox1.Size = new Size(271, 32);
+            textBox1.TabIndex = 4;
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -288,15 +297,6 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(658, 31);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Search for student details";
-            textBox1.Size = new Size(271, 32);
-            textBox1.TabIndex = 4;
-            // 
             // Form3
             // 
             AccessibleRole = AccessibleRole.Window;
@@ -308,7 +308,6 @@
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
             Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form3";
             StartPosition = FormStartPosition.CenterScreen;
