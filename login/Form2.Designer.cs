@@ -274,6 +274,7 @@
             // 
             // pictureBoxExpand
             // 
+            pictureBoxExpand.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBoxExpand.Cursor = Cursors.Hand;
             pictureBoxExpand.Image = Properties.Resources.DD;
             pictureBoxExpand.Location = new Point(766, 36);
@@ -285,6 +286,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox2.Image = Properties.Resources.logo2;
             pictureBox2.Location = new Point(698, 3);
             pictureBox2.Name = "pictureBox2";
