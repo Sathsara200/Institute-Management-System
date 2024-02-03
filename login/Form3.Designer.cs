@@ -313,6 +313,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";
             WindowState = FormWindowState.Minimized;
+            Load += Form3_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();

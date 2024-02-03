@@ -52,5 +52,11 @@ namespace login
         {
 
         }
+
+        private void buttonAddStudents_Click_1(object sender, EventArgs e)
+        {
+            Form4 frm1 = new Form4();
+            frm1.Show();
+        }
     }
 }

@@ -1,3 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+
+
 namespace login
 {
     public partial class Form1 : Form
@@ -9,6 +21,8 @@ namespace login
             
         }
 
+        
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -18,15 +32,15 @@ namespace login
         {
             if (textUsername.Text == "Admin" && textPassword.Text == "Admin123")
             {
-                MessageBox.Show("Welcome Admin");
+                MessageBox.Show("Welcome admin ");
                 Form2 frm1 = new Form2();
                 frm1.Show();
                 this.Hide();
-
             }
             else if (textUsername.Text == "Teacher" && textPassword.Text == "Teacher123")
             {
-                MessageBox.Show("Welcome Teacher");
+                // to open a new form
+                MessageBox.Show("Welcome Teacher ");
                 Form3 frm2 = new Form3();
                 frm2.Show();
                 this.Hide();
@@ -38,6 +52,7 @@ namespace login
                 textPassword.Clear();
                 textUsername.Focus();
             }
+
 
         }
 

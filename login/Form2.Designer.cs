@@ -153,6 +153,7 @@
             buttonAddStudents.Text = "  Students";
             buttonAddStudents.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonAddStudents.UseVisualStyleBackColor = true;
+            buttonAddStudents.Click += buttonAddStudents_Click_1;
             // 
             // buttonAddClass
             // 
