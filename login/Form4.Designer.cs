@@ -49,6 +49,8 @@
             btnDelete = new Button();
             btnUpdate = new Button();
             dateTimePicker1 = new DateTimePicker();
+            label9 = new Label();
+            txtId = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSearch).BeginInit();
             SuspendLayout();
             // 
@@ -103,7 +105,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(57, 147);
+            label2.Location = new Point(57, 185);
             label2.Name = "label2";
             label2.Size = new Size(68, 28);
             label2.TabIndex = 4;
@@ -111,7 +113,7 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(233, 148);
+            txtName.Location = new Point(233, 186);
             txtName.Multiline = true;
             txtName.Name = "txtName";
             txtName.Size = new Size(381, 27);
@@ -122,7 +124,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(57, 187);
+            label3.Location = new Point(57, 225);
             label3.Name = "label3";
             label3.Size = new Size(68, 28);
             label3.TabIndex = 4;
@@ -130,7 +132,7 @@
             // 
             // txtGrade
             // 
-            txtGrade.Location = new Point(233, 187);
+            txtGrade.Location = new Point(233, 225);
             txtGrade.Multiline = true;
             txtGrade.Name = "txtGrade";
             txtGrade.Size = new Size(381, 27);
@@ -141,7 +143,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(57, 226);
+            label4.Location = new Point(57, 264);
             label4.Name = "label4";
             label4.Size = new Size(136, 28);
             label4.TabIndex = 4;
@@ -152,7 +154,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(57, 265);
+            label5.Location = new Point(57, 303);
             label5.Name = "label5";
             label5.Size = new Size(80, 28);
             label5.TabIndex = 4;
@@ -160,7 +162,7 @@
             // 
             // txtGender
             // 
-            txtGender.Location = new Point(233, 265);
+            txtGender.Location = new Point(231, 303);
             txtGender.Multiline = true;
             txtGender.Name = "txtGender";
             txtGender.Size = new Size(381, 27);
@@ -263,11 +265,30 @@
             // 
             dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(231, 226);
+            dateTimePicker1.Location = new Point(231, 264);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(383, 27);
             dateTimePicker1.TabIndex = 7;
             dateTimePicker1.Value = new DateTime(2024, 2, 6, 0, 0, 0, 0);
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(57, 147);
+            label9.Name = "label9";
+            label9.Size = new Size(30, 28);
+            label9.TabIndex = 4;
+            label9.Text = "Id";
+            // 
+            // txtId
+            // 
+            txtId.Location = new Point(233, 148);
+            txtId.Multiline = true;
+            txtId.Name = "txtId";
+            txtId.Size = new Size(381, 27);
+            txtId.TabIndex = 5;
             // 
             // Form4
             // 
@@ -284,6 +305,7 @@
             Controls.Add(txtAddress);
             Controls.Add(txtGrade);
             Controls.Add(txtMobile);
+            Controls.Add(txtId);
             Controls.Add(txtName);
             Controls.Add(label5);
             Controls.Add(label8);
@@ -291,6 +313,7 @@
             Controls.Add(label7);
             Controls.Add(label3);
             Controls.Add(label6);
+            Controls.Add(label9);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textSearch);
@@ -328,5 +351,7 @@
         private Button btnDelete;
         private Button btnUpdate;
         private DateTimePicker dateTimePicker1;
+        private Label label9;
+        private TextBox txtId;
     }
 }
