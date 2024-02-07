@@ -78,6 +78,7 @@
             Controls.Add(btnSearch);
             Name = "Form4";
             Text = "Form4";
+            Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewSearch).EndInit();
             ResumeLayout(false);
             PerformLayout();
