@@ -299,6 +299,7 @@
             Controls.Add(dataGridViewSearch);
             Controls.Add(btnSearch);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form4";
             Text = "Form4";
             Load += Form4_Load;

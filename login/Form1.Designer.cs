@@ -65,7 +65,7 @@
             panel1.MaximumSize = new Size(500, 862);
             panel1.MinimumSize = new Size(250, 431);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 431);
+            panel1.Size = new Size(268, 478);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -74,9 +74,9 @@
             button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(24, 312);
+            button1.Location = new Point(24, 359);
             button1.Name = "button1";
-            button1.Size = new Size(204, 41);
+            button1.Size = new Size(222, 41);
             button1.TabIndex = 4;
             button1.Text = "LOGIN";
             button1.UseVisualStyleBackColor = true;
@@ -87,9 +87,9 @@
             button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button2.AutoSize = true;
             button2.BackColor = Color.Silver;
-            button2.Location = new Point(24, 359);
+            button2.Location = new Point(24, 406);
             button2.Name = "button2";
-            button2.Size = new Size(204, 38);
+            button2.Size = new Size(222, 38);
             button2.TabIndex = 4;
             button2.Text = "EXITE";
             button2.UseVisualStyleBackColor = false;
@@ -99,10 +99,10 @@
             // 
             textPassword.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textPassword.ForeColor = SystemColors.ControlDark;
-            textPassword.Location = new Point(53, 254);
+            textPassword.Location = new Point(53, 301);
             textPassword.Multiline = true;
             textPassword.Name = "textPassword";
-            textPassword.Size = new Size(175, 34);
+            textPassword.Size = new Size(193, 34);
             textPassword.TabIndex = 3;
             textPassword.Text = "Password";
             textPassword.TextChanged += textPassword_TextChanged;
@@ -113,10 +113,10 @@
             // 
             textUsername.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textUsername.ForeColor = SystemColors.ControlDark;
-            textUsername.Location = new Point(53, 185);
+            textUsername.Location = new Point(53, 232);
             textUsername.Multiline = true;
             textUsername.Name = "textUsername";
-            textUsername.Size = new Size(175, 34);
+            textUsername.Size = new Size(193, 34);
             textUsername.TabIndex = 3;
             textUsername.Text = "User name";
             textUsername.Enter += textUsername_Enter;
@@ -126,16 +126,16 @@
             // 
             panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel3.BackColor = SystemColors.HotTrack;
-            panel3.Location = new Point(24, 287);
+            panel3.Location = new Point(24, 334);
             panel3.Name = "panel3";
-            panel3.Size = new Size(204, 1);
+            panel3.Size = new Size(222, 1);
             panel3.TabIndex = 2;
             // 
             // pictureBox3
             // 
             pictureBox3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(24, 254);
+            pictureBox3.Location = new Point(24, 301);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(23, 34);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -146,16 +146,16 @@
             // 
             panel2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BackColor = SystemColors.HotTrack;
-            panel2.Location = new Point(24, 218);
+            panel2.Location = new Point(24, 265);
             panel2.Name = "panel2";
-            panel2.Size = new Size(204, 1);
+            panel2.Size = new Size(222, 1);
             panel2.TabIndex = 2;
             // 
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(24, 185);
+            pictureBox2.Location = new Point(24, 232);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(23, 34);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -169,7 +169,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(31, 16);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(186, 144);
+            pictureBox1.Size = new Size(204, 191);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -178,10 +178,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1020, 498);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
