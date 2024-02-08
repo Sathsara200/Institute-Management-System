@@ -269,7 +269,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(Search);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form5";
             Text = "Form5";
             Load += Form5_Load;
