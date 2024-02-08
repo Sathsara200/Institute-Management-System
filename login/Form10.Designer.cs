@@ -288,6 +288,7 @@
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form10";
             Text = "Form10";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
