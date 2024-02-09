@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtSearch = new TextBox();
+            btnSearch = new Button();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -39,16 +39,16 @@
             label7 = new Label();
             dataGridView1 = new DataGridView();
             label8 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
+            txtId = new TextBox();
+            txtName = new TextBox();
+            txtGender = new TextBox();
+            txtMobile = new TextBox();
+            txtAddress = new TextBox();
+            txtSalary = new TextBox();
             dateTimePicker1 = new DateTimePicker();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnInsert = new Button();
+            btnUpdate = new Button();
+            btnDelete = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -59,29 +59,31 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(540, 12);
             label1.Name = "label1";
-            label1.Size = new Size(244, 41);
+            label1.Size = new Size(230, 41);
             label1.TabIndex = 0;
-            label1.Text = "Employe Details";
+            label1.Text = "Teacher Details";
             // 
-            // textBox1
+            // txtSearch
             // 
-            textBox1.Location = new Point(57, 65);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1047, 41);
-            textBox1.TabIndex = 1;
+            txtSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtSearch.Location = new Point(57, 65);
+            txtSearch.Multiline = true;
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(1047, 41);
+            txtSearch.TabIndex = 1;
             // 
-            // button1
+            // btnSearch
             // 
-            button1.BackColor = Color.BlueViolet;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(1133, 65);
-            button1.Name = "button1";
-            button1.Size = new Size(111, 41);
-            button1.TabIndex = 2;
-            button1.Text = "Search";
-            button1.UseVisualStyleBackColor = false;
+            btnSearch.BackColor = Color.BlueViolet;
+            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSearch.ForeColor = Color.White;
+            btnSearch.Location = new Point(1133, 65);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(111, 41);
+            btnSearch.TabIndex = 2;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click_1;
             // 
             // label2
             // 
@@ -163,103 +165,108 @@
             label8.TabIndex = 10;
             label8.Text = "Salary";
             // 
-            // textBox2
+            // txtId
             // 
-            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(230, 146);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(381, 25);
-            textBox2.TabIndex = 11;
+            txtId.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtId.Location = new Point(230, 146);
+            txtId.Multiline = true;
+            txtId.Name = "txtId";
+            txtId.Size = new Size(381, 25);
+            txtId.TabIndex = 11;
             // 
-            // textBox3
+            // txtName
             // 
-            textBox3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(230, 185);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(381, 27);
-            textBox3.TabIndex = 11;
+            txtName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtName.Location = new Point(230, 185);
+            txtName.Multiline = true;
+            txtName.Name = "txtName";
+            txtName.Size = new Size(381, 27);
+            txtName.TabIndex = 11;
             // 
-            // textBox4
+            // txtGender
             // 
-            textBox4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(230, 224);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(381, 27);
-            textBox4.TabIndex = 11;
+            txtGender.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtGender.Location = new Point(230, 224);
+            txtGender.Multiline = true;
+            txtGender.Name = "txtGender";
+            txtGender.Size = new Size(381, 27);
+            txtGender.TabIndex = 11;
             // 
-            // textBox6
+            // txtMobile
             // 
-            textBox6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(863, 147);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(381, 27);
-            textBox6.TabIndex = 11;
+            txtMobile.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtMobile.Location = new Point(863, 147);
+            txtMobile.Multiline = true;
+            txtMobile.Name = "txtMobile";
+            txtMobile.Size = new Size(381, 27);
+            txtMobile.TabIndex = 11;
             // 
-            // textBox7
+            // txtAddress
             // 
-            textBox7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox7.Location = new Point(863, 186);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(381, 27);
-            textBox7.TabIndex = 11;
+            txtAddress.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtAddress.Location = new Point(863, 186);
+            txtAddress.Multiline = true;
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(381, 27);
+            txtAddress.TabIndex = 11;
             // 
-            // textBox8
+            // txtSalary
             // 
-            textBox8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox8.Location = new Point(863, 225);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(381, 27);
-            textBox8.TabIndex = 11;
+            txtSalary.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtSalary.Location = new Point(863, 225);
+            txtSalary.Multiline = true;
+            txtSalary.Name = "txtSalary";
+            txtSalary.Size = new Size(381, 27);
+            txtSalary.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             dateTimePicker1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.Location = new Point(228, 263);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(381, 31);
             dateTimePicker1.TabIndex = 12;
             // 
-            // button2
+            // btnInsert
             // 
-            button2.BackColor = Color.BlueViolet;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(863, 294);
-            button2.Name = "button2";
-            button2.Size = new Size(106, 29);
-            button2.TabIndex = 13;
-            button2.Text = "Insert";
-            button2.UseVisualStyleBackColor = false;
+            btnInsert.BackColor = Color.BlueViolet;
+            btnInsert.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnInsert.ForeColor = Color.White;
+            btnInsert.Location = new Point(863, 294);
+            btnInsert.Name = "btnInsert";
+            btnInsert.Size = new Size(106, 29);
+            btnInsert.TabIndex = 13;
+            btnInsert.Text = "Insert";
+            btnInsert.UseVisualStyleBackColor = false;
+            btnInsert.Click += btnInsert_Click_1;
             // 
-            // button3
+            // btnUpdate
             // 
-            button3.BackColor = Color.BlueViolet;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(1000, 294);
-            button3.Name = "button3";
-            button3.Size = new Size(106, 29);
-            button3.TabIndex = 14;
-            button3.Text = "Update";
-            button3.UseVisualStyleBackColor = false;
+            btnUpdate.BackColor = Color.BlueViolet;
+            btnUpdate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnUpdate.ForeColor = Color.White;
+            btnUpdate.Location = new Point(1000, 294);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(106, 29);
+            btnUpdate.TabIndex = 14;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
-            // button4
+            // btnDelete
             // 
-            button4.BackColor = Color.BlueViolet;
-            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(1138, 294);
-            button4.Name = "button4";
-            button4.Size = new Size(106, 29);
-            button4.TabIndex = 15;
-            button4.Text = "Delete";
-            button4.UseVisualStyleBackColor = false;
+            btnDelete.BackColor = Color.BlueViolet;
+            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(1138, 294);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(106, 29);
+            btnDelete.TabIndex = 15;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // Form10
             // 
@@ -267,16 +274,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1296, 537);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnDelete);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnInsert);
             Controls.Add(dateTimePicker1);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(txtSalary);
+            Controls.Add(txtAddress);
+            Controls.Add(txtMobile);
+            Controls.Add(txtGender);
+            Controls.Add(txtName);
+            Controls.Add(txtId);
             Controls.Add(label8);
             Controls.Add(dataGridView1);
             Controls.Add(label7);
@@ -285,12 +292,13 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(btnSearch);
+            Controls.Add(txtSearch);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form10";
             Text = "Form10";
+            Load += Form10_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -299,8 +307,8 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txtSearch;
+        private Button btnSearch;
         private Label label2;
         private Label label3;
         private Label label4;
@@ -309,15 +317,15 @@
         private Label label7;
         private DataGridView dataGridView1;
         private Label label8;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
+        private TextBox txtId;
+        private TextBox txtName;
+        private TextBox txtGender;
+        private TextBox txtMobile;
+        private TextBox txtAddress;
+        private TextBox txtSalary;
         private DateTimePicker dateTimePicker1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnInsert;
+        private Button btnUpdate;
+        private Button btnDelete;
     }
 }

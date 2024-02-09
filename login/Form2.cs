@@ -50,13 +50,13 @@ namespace login
 
         private void buttonReport_Click(object sender, EventArgs e)
         {
-
+            Form10 frm2 = new Form10();
+            frm2.Show();
         }
 
         private void buttonAddStudents_Click_1(object sender, EventArgs e)
         {
-            Form4 frm1 = new Form4();
-            frm1.Show();
+            
         }
     }
 }
