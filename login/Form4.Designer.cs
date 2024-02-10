@@ -56,6 +56,8 @@
             // button1
             // 
             button1.BackColor = Color.BlueViolet;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(1133, 65);
             button1.Name = "button1";
             button1.Size = new Size(111, 41);
@@ -66,6 +68,8 @@
             // button3
             // 
             button3.BackColor = Color.BlueViolet;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
             button3.Location = new Point(1000, 294);
             button3.Name = "button3";
             button3.Size = new Size(106, 29);
@@ -76,6 +80,8 @@
             // button4
             // 
             button4.BackColor = Color.BlueViolet;
+            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
             button4.Location = new Point(863, 294);
             button4.Name = "button4";
             button4.Size = new Size(106, 29);
@@ -95,6 +101,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(863, 147);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(381, 27);
             textBox1.TabIndex = 5;
@@ -102,6 +109,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(863, 189);
+            textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(381, 27);
             textBox2.TabIndex = 5;
@@ -119,6 +127,7 @@
             // textBox4
             // 
             textBox4.Location = new Point(230, 146);
+            textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(381, 27);
             textBox4.TabIndex = 5;
@@ -126,13 +135,15 @@
             // textBox6
             // 
             textBox6.Location = new Point(230, 189);
+            textBox6.Multiline = true;
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(381, 27);
             textBox6.TabIndex = 5;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(230, 279);
+            textBox7.Location = new Point(230, 273);
+            textBox7.Multiline = true;
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(381, 27);
             textBox7.TabIndex = 5;
@@ -140,6 +151,8 @@
             // button5
             // 
             button5.BackColor = Color.BlueViolet;
+            button5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
             button5.Location = new Point(1140, 294);
             button5.Name = "button5";
             button5.Size = new Size(106, 29);
@@ -186,7 +199,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.Window;
-            label4.Location = new Point(57, 237);
+            label4.Location = new Point(57, 232);
             label4.Name = "label4";
             label4.Size = new Size(136, 28);
             label4.TabIndex = 7;
@@ -197,7 +210,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.Window;
-            label5.Location = new Point(57, 279);
+            label5.Location = new Point(57, 275);
             label5.Name = "label5";
             label5.Size = new Size(87, 28);
             label5.TabIndex = 7;
@@ -228,6 +241,7 @@
             // textBox8
             // 
             textBox8.Location = new Point(863, 233);
+            textBox8.Multiline = true;
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(381, 27);
             textBox8.TabIndex = 5;
