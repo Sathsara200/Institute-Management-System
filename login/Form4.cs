@@ -31,5 +31,10 @@ namespace login
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
