@@ -51,7 +51,6 @@
             panel6 = new Panel();
             buttonLogout = new Button();
             panel5 = new Panel();
-            button1 = new Button();
             buttonMinimize = new Button();
             label6 = new Label();
             label7 = new Label();
@@ -330,7 +329,7 @@
             panelExpand.Controls.Add(panel5);
             panelExpand.Location = new Point(698, 0);
             panelExpand.Name = "panelExpand";
-            panelExpand.Size = new Size(214, 126);
+            panelExpand.Size = new Size(214, 97);
             panelExpand.TabIndex = 0;
             // 
             // panel6
@@ -350,39 +349,21 @@
             buttonLogout.ForeColor = Color.FromArgb(67, 3, 125);
             buttonLogout.Image = Properties.Resources.logout;
             buttonLogout.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonLogout.Location = new Point(22, 0);
+            buttonLogout.Location = new Point(0, 3);
             buttonLogout.Name = "buttonLogout";
-            buttonLogout.Size = new Size(177, 48);
+            buttonLogout.Size = new Size(213, 50);
             buttonLogout.TabIndex = 0;
             buttonLogout.Text = "Log-out";
             buttonLogout.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            panel5.Controls.Add(button1);
             panel5.Controls.Add(buttonMinimize);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(212, 45);
             panel5.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.White;
-            button1.Cursor = Cursors.Hand;
-            button1.Dock = DockStyle.Top;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.FromArgb(67, 3, 125);
-            button1.Image = Properties.Resources.min;
-            button1.Location = new Point(0, 48);
-            button1.Name = "button1";
-            button1.Size = new Size(212, 48);
-            button1.TabIndex = 1;
-            button1.Text = "  Minimize";
-            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = false;
             // 
             // buttonMinimize
             // 
@@ -395,7 +376,7 @@
             buttonMinimize.Image = Properties.Resources.min;
             buttonMinimize.Location = new Point(0, 0);
             buttonMinimize.Name = "buttonMinimize";
-            buttonMinimize.Size = new Size(212, 48);
+            buttonMinimize.Size = new Size(212, 45);
             buttonMinimize.TabIndex = 0;
             buttonMinimize.Text = "  Minimize";
             buttonMinimize.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -497,7 +478,6 @@
         private Panel panelExpand;
         private Panel panel5;
         private Button buttonMinimize;
-        private Button button1;
         private Panel panel6;
         private Button buttonLogout;
         private Panel panel7;

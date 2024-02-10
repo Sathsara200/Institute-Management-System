@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Search = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            bttnSearch = new Button();
+            txxtSearch = new TextBox();
+            textId = new TextBox();
+            bttnInsert = new Button();
+            bttnDelete = new Button();
             button3 = new Button();
             label1 = new Label();
-            textBox3 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            textName = new TextBox();
+            textMobile = new TextBox();
+            textGender = new TextBox();
+            textAddress = new TextBox();
+            dateTimePicker2 = new DateTimePicker();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -47,69 +47,78 @@
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dataGridView2 = new DataGridView();
+            label9 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label10 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
-            // Search
+            // bttnSearch
             // 
-            Search.BackColor = Color.BlueViolet;
-            Search.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Search.ForeColor = Color.White;
-            Search.Location = new Point(1133, 65);
-            Search.Name = "Search";
-            Search.Size = new Size(111, 41);
-            Search.TabIndex = 0;
-            Search.Text = "Search";
-            Search.UseVisualStyleBackColor = false;
+            bttnSearch.BackColor = Color.BlueViolet;
+            bttnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bttnSearch.ForeColor = Color.White;
+            bttnSearch.Location = new Point(1133, 65);
+            bttnSearch.Name = "bttnSearch";
+            bttnSearch.Size = new Size(111, 41);
+            bttnSearch.TabIndex = 0;
+            bttnSearch.Text = "Search";
+            bttnSearch.UseVisualStyleBackColor = false;
+            bttnSearch.Click += bttnSearch_Click;
             // 
-            // textBox1
+            // txxtSearch
             // 
-            textBox1.Location = new Point(57, 65);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1047, 41);
-            textBox1.TabIndex = 1;
+            txxtSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txxtSearch.Location = new Point(57, 65);
+            txxtSearch.Multiline = true;
+            txxtSearch.Name = "txxtSearch";
+            txxtSearch.Size = new Size(1047, 41);
+            txxtSearch.TabIndex = 1;
             // 
-            // textBox2
+            // textId
             // 
-            textBox2.Location = new Point(230, 146);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(381, 27);
-            textBox2.TabIndex = 2;
-            textBox2.TextChanged += textBox2_TextChanged;
+            textId.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textId.Location = new Point(230, 147);
+            textId.Multiline = true;
+            textId.Name = "textId";
+            textId.Size = new Size(381, 27);
+            textId.TabIndex = 2;
+            textId.TextChanged += textBox2_TextChanged;
             // 
-            // button1
+            // bttnInsert
             // 
-            button1.BackColor = Color.BlueViolet;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(863, 294);
-            button1.Name = "button1";
-            button1.Size = new Size(106, 29);
-            button1.TabIndex = 3;
-            button1.Text = "Insert";
-            button1.UseVisualStyleBackColor = false;
+            bttnInsert.BackColor = Color.BlueViolet;
+            bttnInsert.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bttnInsert.ForeColor = Color.White;
+            bttnInsert.Location = new Point(863, 306);
+            bttnInsert.Name = "bttnInsert";
+            bttnInsert.Size = new Size(106, 29);
+            bttnInsert.TabIndex = 3;
+            bttnInsert.Text = "Insert";
+            bttnInsert.UseVisualStyleBackColor = false;
+            bttnInsert.Click += bttnInsert_Click;
             // 
-            // button2
+            // bttnDelete
             // 
-            button2.BackColor = Color.BlueViolet;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(1138, 294);
-            button2.Name = "button2";
-            button2.Size = new Size(106, 29);
-            button2.TabIndex = 3;
-            button2.Text = "Delete";
-            button2.UseVisualStyleBackColor = false;
+            bttnDelete.BackColor = Color.BlueViolet;
+            bttnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bttnDelete.ForeColor = Color.White;
+            bttnDelete.Location = new Point(1138, 306);
+            bttnDelete.Name = "bttnDelete";
+            bttnDelete.Size = new Size(106, 29);
+            bttnDelete.TabIndex = 3;
+            bttnDelete.Text = "Delete";
+            bttnDelete.UseVisualStyleBackColor = false;
+            bttnDelete.Click += bttnDelete_Click;
             // 
             // button3
             // 
             button3.BackColor = Color.BlueViolet;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(1000, 294);
+            button3.Location = new Point(999, 306);
             button3.Name = "button3";
             button3.Size = new Size(106, 29);
             button3.TabIndex = 3;
@@ -124,54 +133,59 @@
             label1.ForeColor = SystemColors.Window;
             label1.Location = new Point(540, 10);
             label1.Name = "label1";
-            label1.Size = new Size(246, 41);
+            label1.Size = new Size(234, 41);
             label1.TabIndex = 4;
-            label1.Text = "Teacher Deatails";
+            label1.Text = "Student Details";
             // 
-            // textBox3
+            // textName
             // 
-            textBox3.Location = new Point(230, 185);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(381, 27);
-            textBox3.TabIndex = 2;
-            textBox3.TextChanged += textBox2_TextChanged;
+            textName.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textName.Location = new Point(230, 225);
+            textName.Multiline = true;
+            textName.Name = "textName";
+            textName.Size = new Size(381, 27);
+            textName.TabIndex = 2;
+            textName.TextChanged += textBox2_TextChanged;
             // 
-            // textBox5
+            // textMobile
             // 
-            textBox5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(863, 186);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(381, 27);
-            textBox5.TabIndex = 2;
-            textBox5.TextChanged += textBox2_TextChanged;
+            textMobile.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textMobile.Location = new Point(863, 186);
+            textMobile.Multiline = true;
+            textMobile.Name = "textMobile";
+            textMobile.Size = new Size(381, 27);
+            textMobile.TabIndex = 2;
+            textMobile.TextChanged += textBox2_TextChanged;
             // 
-            // textBox6
+            // textGender
             // 
-            textBox6.Location = new Point(863, 147);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(381, 27);
-            textBox6.TabIndex = 2;
-            textBox6.TextChanged += textBox2_TextChanged;
+            textGender.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textGender.Location = new Point(863, 147);
+            textGender.Multiline = true;
+            textGender.Name = "textGender";
+            textGender.Size = new Size(381, 27);
+            textGender.TabIndex = 2;
+            textGender.TextChanged += textBox2_TextChanged;
             // 
-            // textBox7
+            // textAddress
             // 
-            textBox7.Location = new Point(863, 225);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(381, 27);
-            textBox7.TabIndex = 2;
-            textBox7.TextChanged += textBox2_TextChanged;
+            textAddress.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textAddress.Location = new Point(863, 224);
+            textAddress.Multiline = true;
+            textAddress.Name = "textAddress";
+            textAddress.Size = new Size(381, 27);
+            textAddress.TabIndex = 2;
+            textAddress.TextChanged += textBox2_TextChanged;
             // 
-            // dateTimePicker1
+            // dateTimePicker2
             // 
-            dateTimePicker1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(230, 224);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(381, 31);
-            dateTimePicker1.TabIndex = 5;
+            dateTimePicker2.CustomFormat = "yyyy-MM-dd";
+            dateTimePicker2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dateTimePicker2.Format = DateTimePickerFormat.Custom;
+            dateTimePicker2.Location = new Point(230, 264);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(381, 31);
+            dateTimePicker2.TabIndex = 5;
             // 
             // label2
             // 
@@ -187,29 +201,29 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(57, 146);
+            label3.Location = new Point(57, 147);
             label3.Name = "label3";
-            label3.Size = new Size(112, 28);
+            label3.Size = new Size(30, 28);
             label3.TabIndex = 7;
-            label3.Text = "Teacher ID";
+            label3.Text = "Id";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(57, 185);
+            label4.Location = new Point(57, 224);
             label4.Name = "label4";
-            label4.Size = new Size(147, 28);
+            label4.Size = new Size(68, 28);
             label4.TabIndex = 7;
-            label4.Text = "Teacher Name";
+            label4.Text = "Name";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(57, 226);
+            label5.Location = new Point(57, 266);
             label5.Name = "label5";
             label5.Size = new Size(136, 28);
             label5.TabIndex = 7;
@@ -243,20 +257,62 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = SystemColors.Window;
-            label8.Location = new Point(687, 225);
+            label8.Location = new Point(687, 226);
             label8.Name = "label8";
             label8.Size = new Size(87, 28);
             label8.TabIndex = 8;
             label8.Text = "Address";
             // 
-            // dataGridView1
+            // dataGridView2
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(57, 352);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1187, 157);
-            dataGridView1.TabIndex = 9;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(57, 352);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(1187, 157);
+            dataGridView2.TabIndex = 9;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(57, 185);
+            label9.Name = "label9";
+            label9.Size = new Size(68, 28);
+            label9.TabIndex = 7;
+            label9.Text = "Grade";
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(230, 186);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(381, 27);
+            textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox2_TextChanged;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(863, 262);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(381, 27);
+            textBox2.TabIndex = 2;
+            textBox2.TextChanged += textBox2_TextChanged;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = SystemColors.Window;
+            label10.Location = new Point(687, 264);
+            label10.Name = "label10";
+            label10.Size = new Size(108, 28);
+            label10.TabIndex = 8;
+            label10.Text = "Subject_id";
             // 
             // Form5
             // 
@@ -265,49 +321,53 @@
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.Indigo;
             ClientSize = new Size(1296, 537);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridView2);
+            Controls.Add(label10);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
+            Controls.Add(label9);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(dateTimePicker2);
             Controls.Add(label1);
             Controls.Add(button3);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(button2);
-            Controls.Add(textBox3);
-            Controls.Add(button1);
             Controls.Add(textBox2);
+            Controls.Add(textAddress);
+            Controls.Add(textGender);
+            Controls.Add(textMobile);
+            Controls.Add(bttnDelete);
+            Controls.Add(textName);
             Controls.Add(textBox1);
-            Controls.Add(Search);
+            Controls.Add(bttnInsert);
+            Controls.Add(textId);
+            Controls.Add(txxtSearch);
+            Controls.Add(bttnSearch);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form5";
             Text = "Form5";
             Load += Form5_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button Search;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button2;
+        private Button bttnSearch;
+        private TextBox txxtSearch;
+        private TextBox textId;
+        private Button bttnInsert;
+        private Button bttnDelete;
         private Button button3;
         private Label label1;
-        private TextBox textBox3;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private DateTimePicker dateTimePicker1;
+        private TextBox textName;
+        private TextBox textMobile;
+        private TextBox textGender;
+        private TextBox textAddress;
+        private DateTimePicker dateTimePicker2;
         private Label label2;
         private Label label3;
         private Label label4;
@@ -315,6 +375,10 @@
         private Label label6;
         private Label label7;
         private Label label8;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridView2;
+        private Label label9;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label10;
     }
 }

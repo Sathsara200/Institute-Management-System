@@ -56,7 +56,8 @@ namespace login
 
         private void buttonAddStudents_Click_1(object sender, EventArgs e)
         {
-            
+            Form5 frm2 = new Form5();
+            frm2.Show();
         }
     }
 }
