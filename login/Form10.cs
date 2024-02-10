@@ -29,13 +29,13 @@ namespace login
 
         }
 
-       
-
-       
 
 
 
-       
+
+
+
+
 
 
 
@@ -102,21 +102,21 @@ namespace login
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            
 
-                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J1972OJ\SQLEXPRESS;Initial Catalog=institutedb;Integrated Security=True;Encrypt=False");
-                con.Open();
-                SqlCommand cmd = new SqlCommand("delete teacher where teacher_id=@teacher_id", con);
-                cmd.Parameters.AddWithValue("@teacher_id", int.Parse(txtId.Text));
 
-                cmd.ExecuteNonQuery();
-                con.Close();
-                display();
-                MessageBox.Show("Record  successfully deleted ", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J1972OJ\SQLEXPRESS;Initial Catalog=institutedb;Integrated Security=True;Encrypt=False");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("delete teacher where teacher_id=@teacher_id", con);
+            cmd.Parameters.AddWithValue("@teacher_id", int.Parse(txtId.Text));
 
-            
-            
+            cmd.ExecuteNonQuery();
+            con.Close();
+            display();
+            MessageBox.Show("Record  successfully deleted ", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+
 
 
 
@@ -149,7 +149,7 @@ namespace login
         }
         void display()
         {
-            
+
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J1972OJ\SQLEXPRESS;Initial Catalog=institutedb;Integrated Security=True;Encrypt=False");
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from teacher", con);
@@ -162,8 +162,11 @@ namespace login
 
             dataGridView1.DataSource = dt;
         }
-       
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
