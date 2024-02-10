@@ -97,6 +97,7 @@
             // 
             // buttonRegister
             // 
+            buttonRegister.BackColor = Color.Transparent;
             buttonRegister.Dock = DockStyle.Top;
             buttonRegister.FlatAppearance.BorderColor = Color.White;
             buttonRegister.FlatAppearance.BorderSize = 0;
@@ -112,10 +113,11 @@
             buttonRegister.TabIndex = 0;
             buttonRegister.Text = "  Report";
             buttonRegister.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonRegister.UseVisualStyleBackColor = true;
+            buttonRegister.UseVisualStyleBackColor = false;
             // 
             // buttonReport
             // 
+            buttonReport.BackColor = Color.Transparent;
             buttonReport.Dock = DockStyle.Top;
             buttonReport.FlatAppearance.BorderColor = Color.White;
             buttonReport.FlatAppearance.BorderSize = 0;
@@ -131,11 +133,12 @@
             buttonReport.TabIndex = 0;
             buttonReport.Text = "  Teachers";
             buttonReport.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonReport.UseVisualStyleBackColor = true;
+            buttonReport.UseVisualStyleBackColor = false;
             buttonReport.Click += buttonReport_Click;
             // 
             // buttonAddStudents
             // 
+            buttonAddStudents.BackColor = Color.Transparent;
             buttonAddStudents.Dock = DockStyle.Top;
             buttonAddStudents.FlatAppearance.BorderColor = Color.White;
             buttonAddStudents.FlatAppearance.BorderSize = 0;
@@ -151,18 +154,19 @@
             buttonAddStudents.TabIndex = 0;
             buttonAddStudents.Text = "  Students";
             buttonAddStudents.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonAddStudents.UseVisualStyleBackColor = true;
+            buttonAddStudents.UseVisualStyleBackColor = false;
             buttonAddStudents.Click += buttonAddStudents_Click_1;
             // 
             // buttonAddClass
             // 
+            buttonAddClass.BackColor = Color.Transparent;
             buttonAddClass.Dock = DockStyle.Top;
             buttonAddClass.FlatAppearance.BorderColor = Color.White;
             buttonAddClass.FlatAppearance.BorderSize = 0;
             buttonAddClass.FlatAppearance.MouseDownBackColor = Color.White;
             buttonAddClass.FlatAppearance.MouseOverBackColor = Color.White;
-            buttonAddClass.FlatStyle = FlatStyle.Flat;
-            buttonAddClass.ForeColor = Color.White;
+            buttonAddClass.FlatStyle = FlatStyle.Popup;
+            buttonAddClass.ForeColor = Color.Transparent;
             buttonAddClass.Image = Properties.Resources.class1;
             buttonAddClass.ImageAlign = ContentAlignment.MiddleLeft;
             buttonAddClass.Location = new Point(0, 133);
@@ -171,10 +175,12 @@
             buttonAddClass.TabIndex = 0;
             buttonAddClass.Text = "  Add Class";
             buttonAddClass.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonAddClass.UseVisualStyleBackColor = true;
+            buttonAddClass.UseVisualStyleBackColor = false;
+            buttonAddClass.Click += buttonAddClass_Click;
             // 
             // buttonAttendance
             // 
+            buttonAttendance.BackColor = Color.Transparent;
             buttonAttendance.Dock = DockStyle.Top;
             buttonAttendance.FlatAppearance.BorderColor = Color.White;
             buttonAttendance.FlatAppearance.BorderSize = 0;
@@ -190,10 +196,11 @@
             buttonAttendance.TabIndex = 0;
             buttonAttendance.Text = "  Attendance";
             buttonAttendance.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonAttendance.UseVisualStyleBackColor = true;
+            buttonAttendance.UseVisualStyleBackColor = false;
             // 
             // buttonDashboard
             // 
+            buttonDashboard.BackColor = Color.Transparent;
             buttonDashboard.Dock = DockStyle.Top;
             buttonDashboard.FlatAppearance.BorderColor = Color.White;
             buttonDashboard.FlatAppearance.BorderSize = 0;
@@ -209,7 +216,7 @@
             buttonDashboard.TabIndex = 0;
             buttonDashboard.Text = "  Dashboard";
             buttonDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonDashboard.UseVisualStyleBackColor = true;
+            buttonDashboard.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -349,7 +356,7 @@
             buttonLogout.ForeColor = Color.FromArgb(67, 3, 125);
             buttonLogout.Image = Properties.Resources.logout;
             buttonLogout.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonLogout.Location = new Point(0, 3);
+            buttonLogout.Location = new Point(0, 0);
             buttonLogout.Name = "buttonLogout";
             buttonLogout.Size = new Size(213, 50);
             buttonLogout.TabIndex = 0;

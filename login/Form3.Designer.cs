@@ -45,10 +45,15 @@
             panel3 = new Panel();
             panel2 = new Panel();
             panel4 = new Panel();
-            textBox1 = new TextBox();
             label4 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            button1 = new Button();
+            pictureBox8 = new PictureBox();
+            button2 = new Button();
+            pictureBox9 = new PictureBox();
+            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -58,6 +63,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -65,8 +73,14 @@
             panel1.BackColor = Color.Indigo;
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(pictureBox9);
+            panel1.Controls.Add(pictureBox8);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(pictureBox7);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(button3);
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(btnExit);
             panel1.Controls.Add(btnAttendance);
@@ -78,14 +92,14 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(263, 720);
+            panel1.Size = new Size(267, 720);
             panel1.TabIndex = 0;
             // 
             // pictureBox4
             // 
             pictureBox4.BorderStyle = BorderStyle.Fixed3D;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(0, 236);
+            pictureBox4.Location = new Point(0, 337);
             pictureBox4.Margin = new Padding(0);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(44, 47);
@@ -97,7 +111,7 @@
             // 
             pictureBox6.BorderStyle = BorderStyle.Fixed3D;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1, 342);
+            pictureBox6.Location = new Point(0, 440);
             pictureBox6.Margin = new Padding(0);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(44, 47);
@@ -109,7 +123,7 @@
             // 
             pictureBox5.BorderStyle = BorderStyle.Fixed3D;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(1, 289);
+            pictureBox5.Location = new Point(1, 234);
             pictureBox5.Margin = new Padding(0);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(44, 47);
@@ -134,12 +148,13 @@
             btnExit.BackColor = Color.Indigo;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Popup;
+            btnExit.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(46, 342);
+            btnExit.Location = new Point(46, 441);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(215, 47);
             btnExit.TabIndex = 4;
-            btnExit.Text = "Exit";
+            btnExit.Text = "Fee Details";
             btnExit.TextAlign = ContentAlignment.MiddleLeft;
             btnExit.UseVisualStyleBackColor = false;
             // 
@@ -148,12 +163,13 @@
             btnAttendance.BackColor = Color.Indigo;
             btnAttendance.FlatAppearance.BorderSize = 0;
             btnAttendance.FlatStyle = FlatStyle.Popup;
+            btnAttendance.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAttendance.ForeColor = Color.White;
-            btnAttendance.Location = new Point(48, 289);
+            btnAttendance.Location = new Point(47, 234);
             btnAttendance.Name = "btnAttendance";
-            btnAttendance.Size = new Size(215, 47);
+            btnAttendance.Size = new Size(213, 47);
             btnAttendance.TabIndex = 4;
-            btnAttendance.Text = "Attendance";
+            btnAttendance.Text = "Student Attendance";
             btnAttendance.TextAlign = ContentAlignment.MiddleLeft;
             btnAttendance.UseVisualStyleBackColor = false;
             // 
@@ -162,10 +178,11 @@
             btnDashboard.BackColor = Color.Indigo;
             btnDashboard.FlatAppearance.BorderSize = 0;
             btnDashboard.FlatStyle = FlatStyle.Popup;
+            btnDashboard.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDashboard.ForeColor = Color.White;
-            btnDashboard.Location = new Point(48, 183);
+            btnDashboard.Location = new Point(46, 183);
             btnDashboard.Name = "btnDashboard";
-            btnDashboard.Size = new Size(211, 47);
+            btnDashboard.Size = new Size(213, 47);
             btnDashboard.TabIndex = 4;
             btnDashboard.Text = "Dashboard";
             btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
@@ -176,12 +193,13 @@
             btnProfile.BackColor = Color.Indigo;
             btnProfile.FlatAppearance.BorderSize = 0;
             btnProfile.FlatStyle = FlatStyle.Popup;
+            btnProfile.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnProfile.ForeColor = Color.White;
-            btnProfile.Location = new Point(47, 236);
+            btnProfile.Location = new Point(46, 337);
             btnProfile.Name = "btnProfile";
-            btnProfile.Size = new Size(212, 47);
+            btnProfile.Size = new Size(214, 47);
             btnProfile.TabIndex = 4;
-            btnProfile.Text = "Profile";
+            btnProfile.Text = "Student Details";
             btnProfile.TextAlign = ContentAlignment.MiddleLeft;
             btnProfile.UseVisualStyleBackColor = false;
             // 
@@ -193,7 +211,7 @@
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(259, 167);
+            panel5.Size = new Size(263, 167);
             panel5.TabIndex = 3;
             // 
             // label3
@@ -224,7 +242,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(259, 92);
+            pictureBox1.Size = new Size(263, 92);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -247,22 +265,12 @@
             // panel4
             // 
             panel4.BackColor = Color.Indigo;
-            panel4.Controls.Add(textBox1);
             panel4.Controls.Add(label4);
             panel4.Controls.Add(label2);
             panel4.Location = new Point(259, 75);
             panel4.Name = "panel4";
             panel4.Size = new Size(942, 92);
             panel4.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(658, 31);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Search for student details";
-            textBox1.Size = new Size(271, 32);
-            textBox1.TabIndex = 4;
             // 
             // label4
             // 
@@ -271,9 +279,9 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(208, 31);
             label4.Name = "label4";
-            label4.Size = new Size(51, 34);
+            label4.Size = new Size(104, 34);
             label4.TabIndex = 3;
-            label4.Text = "{?}";
+            label4.Text = "Admin";
             // 
             // label2
             // 
@@ -296,6 +304,86 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(1, 285);
+            pictureBox7.Margin = new Padding(0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(44, 47);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 5;
+            pictureBox7.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Indigo;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(46, 286);
+            button1.Name = "button1";
+            button1.Size = new Size(215, 47);
+            button1.TabIndex = 4;
+            button1.Text = "Teacher Attendence";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(0, 388);
+            pictureBox8.Margin = new Padding(0);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(44, 47);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 5;
+            pictureBox8.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Indigo;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(46, 389);
+            button2.Name = "button2";
+            button2.Size = new Size(215, 47);
+            button2.TabIndex = 4;
+            button2.Text = "Teacher Details";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(0, 492);
+            pictureBox9.Margin = new Padding(0);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(44, 47);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 5;
+            pictureBox9.TabStop = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Indigo;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(46, 492);
+            button3.Name = "button3";
+            button3.Size = new Size(215, 47);
+            button3.TabIndex = 4;
+            button3.Text = "Exit";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 
@@ -326,6 +414,9 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ResumeLayout(false);
         }
 
@@ -350,6 +441,11 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
+        private PictureBox pictureBox7;
+        private Button button1;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox8;
+        private Button button3;
+        private Button button2;
     }
 }

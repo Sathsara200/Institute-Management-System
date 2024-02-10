@@ -59,5 +59,10 @@ namespace login
             Form5 frm2 = new Form5();
             frm2.Show();
         }
+
+        private void buttonAddClass_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
