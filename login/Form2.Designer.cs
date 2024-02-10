@@ -435,13 +435,12 @@
             Controls.Add(panel3);
             Controls.Add(panel1);
             Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            HelpButton = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form2";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "Institute Management System";
-            WindowState = FormWindowState.Maximized;
             panel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel2.ResumeLayout(false);
