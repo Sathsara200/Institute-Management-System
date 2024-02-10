@@ -239,6 +239,7 @@
             label6.Size = new Size(80, 28);
             label6.TabIndex = 8;
             label6.Text = "Gender";
+            label6.Click += label6_Click;
             // 
             // label7
             // 
