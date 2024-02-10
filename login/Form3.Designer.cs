@@ -31,8 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             panel1 = new Panel();
             pictureBox4 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            button1 = new Button();
+            pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
+            button3 = new Button();
+            button2 = new Button();
             pictureBox3 = new PictureBox();
             btnExit = new Button();
             btnAttendance = new Button();
@@ -48,14 +54,11 @@
             label4 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            button1 = new Button();
-            pictureBox8 = new PictureBox();
-            button2 = new Button();
-            pictureBox9 = new PictureBox();
-            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -63,9 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -107,6 +107,57 @@
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
             // 
+            // pictureBox9
+            // 
+            pictureBox9.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(0, 492);
+            pictureBox9.Margin = new Padding(0);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(44, 47);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 5;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(0, 388);
+            pictureBox8.Margin = new Padding(0);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(44, 47);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 5;
+            pictureBox8.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Indigo;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(46, 286);
+            button1.Name = "button1";
+            button1.Size = new Size(215, 47);
+            button1.TabIndex = 4;
+            button1.Text = "Teacher Attendence";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(1, 285);
+            pictureBox7.Margin = new Padding(0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(44, 47);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 5;
+            pictureBox7.TabStop = false;
+            // 
             // pictureBox6
             // 
             pictureBox6.BorderStyle = BorderStyle.Fixed3D;
@@ -130,6 +181,35 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Indigo;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(46, 492);
+            button3.Name = "button3";
+            button3.Size = new Size(215, 47);
+            button3.TabIndex = 4;
+            button3.Text = "Exit";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Indigo;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(46, 389);
+            button2.Name = "button2";
+            button2.Size = new Size(215, 47);
+            button2.TabIndex = 4;
+            button2.Text = "Teacher Details";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
             // 
@@ -305,86 +385,6 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox7
-            // 
-            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(1, 285);
-            pictureBox7.Margin = new Padding(0);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(44, 47);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 5;
-            pictureBox7.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Indigo;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(46, 286);
-            button1.Name = "button1";
-            button1.Size = new Size(215, 47);
-            button1.TabIndex = 4;
-            button1.Text = "Teacher Attendence";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(0, 388);
-            pictureBox8.Margin = new Padding(0);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(44, 47);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 5;
-            pictureBox8.TabStop = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Indigo;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(46, 389);
-            button2.Name = "button2";
-            button2.Size = new Size(215, 47);
-            button2.TabIndex = 4;
-            button2.Text = "Teacher Details";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(0, 492);
-            pictureBox9.Margin = new Padding(0);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(44, 47);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox9.TabIndex = 5;
-            pictureBox9.TabStop = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.Indigo;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(46, 492);
-            button3.Name = "button3";
-            button3.Size = new Size(215, 47);
-            button3.TabIndex = 4;
-            button3.Text = "Exit";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
-            // 
             // Form3
             // 
             AccessibleRole = AccessibleRole.Window;
@@ -396,7 +396,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
             Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form3";
             StartPosition = FormStartPosition.CenterScreen;
@@ -405,6 +405,9 @@
             Load += Form3_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -414,9 +417,6 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ResumeLayout(false);
         }
 
