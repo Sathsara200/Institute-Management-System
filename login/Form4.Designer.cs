@@ -59,7 +59,7 @@
             button1.Name = "button1";
             button1.Size = new Size(111, 41);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Search";
             button1.UseVisualStyleBackColor = false;
             // 
             // button3
