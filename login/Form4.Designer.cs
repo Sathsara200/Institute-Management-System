@@ -36,7 +36,6 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
-            textBox5 = new TextBox();
             textBox6 = new TextBox();
             textBox7 = new TextBox();
             button5 = new Button();
@@ -49,6 +48,7 @@
             label7 = new Label();
             textBox8 = new TextBox();
             label8 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -121,13 +121,6 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(381, 27);
             textBox4.TabIndex = 5;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(230, 237);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(381, 27);
-            textBox5.TabIndex = 5;
             // 
             // textBox6
             // 
@@ -244,12 +237,21 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = SystemColors.Window;
-            label8.Location = new Point(694, 229);
+            label8.Location = new Point(687, 229);
             label8.Name = "label8";
             label8.Size = new Size(71, 28);
             label8.TabIndex = 7;
             label8.Text = "Salary";
             label8.Click += label8_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(230, 231);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(381, 27);
+            dateTimePicker1.TabIndex = 8;
             // 
             // Form4
             // 
@@ -257,6 +259,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1278, 530);
+            Controls.Add(dateTimePicker1);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -267,7 +270,6 @@
             Controls.Add(label1);
             Controls.Add(button5);
             Controls.Add(textBox7);
-            Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox6);
             Controls.Add(textBox3);
@@ -295,7 +297,6 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
-        private TextBox textBox5;
         private TextBox textBox6;
         private TextBox textBox7;
         private Button button5;
@@ -308,5 +309,6 @@
         private Label label7;
         private TextBox textBox8;
         private Label label8;
+        private DateTimePicker dateTimePicker1;
     }
 }
