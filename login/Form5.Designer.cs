@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             bttnSearch = new Button();
             txxtSearch = new TextBox();
             textId = new TextBox();
@@ -346,7 +347,8 @@
             Controls.Add(textId);
             Controls.Add(txxtSearch);
             Controls.Add(bttnSearch);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form5";
             Text = "Form5";
             Load += Form5_Load;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             button1 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -280,6 +281,7 @@
             Controls.Add(button3);
             Controls.Add(button4);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form4";
             Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

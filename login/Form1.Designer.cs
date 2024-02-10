@@ -183,8 +183,9 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1020, 498);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "institute management system ";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
