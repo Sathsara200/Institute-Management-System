@@ -37,14 +37,7 @@ namespace login
                 frm1.Show();
                 this.Hide();
             }
-            else if (textUsername.Text == "Teacher" && textPassword.Text == "Teacher123")
-            {
-                // to open a new form
-                MessageBox.Show("Welcome Teacher ");
-                Form3 frm2 = new Form3();
-                frm2.Show();
-                this.Hide();
-            }
+           
             else
             {
                 MessageBox.Show("Login Error");

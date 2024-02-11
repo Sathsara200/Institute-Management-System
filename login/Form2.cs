@@ -50,19 +50,40 @@ namespace login
 
         private void buttonReport_Click(object sender, EventArgs e)
         {
-            Form10 frm2 = new Form10();
-            frm2.Show();
+
         }
 
         private void buttonAddStudents_Click_1(object sender, EventArgs e)
         {
-            Form5 frm2 = new Form5();
-            frm2.Show();
+
         }
 
         private void buttonAddClass_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form5 frm2 = new Form5();
+            frm2.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form10 frm2 = new Form10();
+            frm2.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 frm2 = new Form4();
+            frm2.Show();
         }
     }
 }

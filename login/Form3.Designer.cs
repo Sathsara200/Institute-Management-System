@@ -31,13 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             panel1 = new Panel();
             pictureBox4 = new PictureBox();
+            pictureBox10 = new PictureBox();
             pictureBox9 = new PictureBox();
+            button3 = new Button();
             pictureBox8 = new PictureBox();
             button1 = new Button();
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
-            button3 = new Button();
+            button4 = new Button();
             button2 = new Button();
             pictureBox3 = new PictureBox();
             btnExit = new Button();
@@ -56,6 +58,7 @@
             pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -73,13 +76,15 @@
             panel1.BackColor = Color.Indigo;
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(pictureBox10);
             panel1.Controls.Add(pictureBox9);
+            panel1.Controls.Add(button3);
             panel1.Controls.Add(pictureBox8);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(pictureBox7);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox5);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(button4);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(btnExit);
@@ -99,7 +104,7 @@
             // 
             pictureBox4.BorderStyle = BorderStyle.Fixed3D;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(0, 337);
+            pictureBox4.Location = new Point(0, 336);
             pictureBox4.Margin = new Padding(0);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(44, 47);
@@ -107,11 +112,23 @@
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
             // 
+            // pictureBox10
+            // 
+            pictureBox10.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(1, 540);
+            pictureBox10.Margin = new Padding(0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(44, 47);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 5;
+            pictureBox10.TabStop = false;
+            // 
             // pictureBox9
             // 
             pictureBox9.BorderStyle = BorderStyle.Fixed3D;
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(0, 492);
+            pictureBox9.Location = new Point(0, 437);
             pictureBox9.Margin = new Padding(0);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(44, 47);
@@ -119,11 +136,27 @@
             pictureBox9.TabIndex = 5;
             pictureBox9.TabStop = false;
             // 
+            // button3
+            // 
+            button3.BackColor = Color.Indigo;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(47, 438);
+            button3.Name = "button3";
+            button3.Size = new Size(215, 47);
+            button3.TabIndex = 4;
+            button3.Text = "Employe Details";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // pictureBox8
             // 
             pictureBox8.BorderStyle = BorderStyle.Fixed3D;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(0, 388);
+            pictureBox8.Location = new Point(0, 386);
             pictureBox8.Margin = new Padding(0);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(44, 47);
@@ -138,13 +171,14 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(46, 286);
+            button1.Location = new Point(46, 285);
             button1.Name = "button1";
             button1.Size = new Size(215, 47);
             button1.TabIndex = 4;
             button1.Text = "Teacher Attendence";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox7
             // 
@@ -162,7 +196,7 @@
             // 
             pictureBox6.BorderStyle = BorderStyle.Fixed3D;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(0, 440);
+            pictureBox6.Location = new Point(0, 488);
             pictureBox6.Margin = new Padding(0);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(44, 47);
@@ -182,19 +216,20 @@
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
             // 
-            // button3
+            // button4
             // 
-            button3.BackColor = Color.Indigo;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(46, 492);
-            button3.Name = "button3";
-            button3.Size = new Size(215, 47);
-            button3.TabIndex = 4;
-            button3.Text = "Exit";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
+            button4.BackColor = Color.Indigo;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(47, 540);
+            button4.Name = "button4";
+            button4.Size = new Size(215, 47);
+            button4.TabIndex = 4;
+            button4.Text = "Exit";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -203,13 +238,14 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(46, 389);
+            button2.Location = new Point(46, 387);
             button2.Name = "button2";
             button2.Size = new Size(215, 47);
             button2.TabIndex = 4;
             button2.Text = "Teacher Details";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // pictureBox3
             // 
@@ -230,7 +266,7 @@
             btnExit.FlatStyle = FlatStyle.Popup;
             btnExit.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(46, 441);
+            btnExit.Location = new Point(47, 489);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(215, 47);
             btnExit.TabIndex = 4;
@@ -257,7 +293,7 @@
             // 
             btnDashboard.BackColor = Color.Indigo;
             btnDashboard.FlatAppearance.BorderSize = 0;
-            btnDashboard.FlatStyle = FlatStyle.Popup;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
             btnDashboard.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDashboard.ForeColor = Color.White;
             btnDashboard.Location = new Point(46, 183);
@@ -275,13 +311,14 @@
             btnProfile.FlatStyle = FlatStyle.Popup;
             btnProfile.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnProfile.ForeColor = Color.White;
-            btnProfile.Location = new Point(46, 337);
+            btnProfile.Location = new Point(46, 336);
             btnProfile.Name = "btnProfile";
             btnProfile.Size = new Size(214, 47);
             btnProfile.TabIndex = 4;
             btnProfile.Text = "Student Details";
             btnProfile.TextAlign = ContentAlignment.MiddleLeft;
             btnProfile.UseVisualStyleBackColor = false;
+            btnProfile.Click += btnProfile_Click;
             // 
             // panel5
             // 
@@ -391,6 +428,7 @@
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1200, 720);
             Controls.Add(panel4);
             Controls.Add(pictureBox2);
@@ -406,6 +444,7 @@
             Load += Form3_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -446,7 +485,9 @@
         private Button button1;
         private PictureBox pictureBox9;
         private PictureBox pictureBox8;
-        private Button button3;
         private Button button2;
+        private PictureBox pictureBox10;
+        private Button button4;
+        private Button button3;
     }
 }

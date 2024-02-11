@@ -39,13 +39,11 @@
             label6 = new Label();
             label7 = new Label();
             dataGridView1 = new DataGridView();
-            label8 = new Label();
             txtId = new TextBox();
             txtName = new TextBox();
             txtGender = new TextBox();
             txtMobile = new TextBox();
             txtAddress = new TextBox();
-            txtSalary = new TextBox();
             dateTimePicker1 = new DateTimePicker();
             btnInsert = new Button();
             btnUpdate = new Button();
@@ -114,7 +112,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.Window;
-            label4.Location = new Point(54, 263);
+            label4.Location = new Point(687, 140);
             label4.Name = "label4";
             label4.Size = new Size(136, 28);
             label4.TabIndex = 5;
@@ -125,7 +123,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.Window;
-            label5.Location = new Point(687, 186);
+            label5.Location = new Point(687, 223);
             label5.Name = "label5";
             label5.Size = new Size(87, 28);
             label5.TabIndex = 6;
@@ -148,7 +146,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.Window;
-            label7.Location = new Point(687, 146);
+            label7.Location = new Point(687, 184);
             label7.Name = "label7";
             label7.Size = new Size(78, 28);
             label7.TabIndex = 8;
@@ -163,17 +161,6 @@
             dataGridView1.Size = new Size(1187, 157);
             dataGridView1.TabIndex = 9;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = SystemColors.Window;
-            label8.Location = new Point(687, 225);
-            label8.Name = "label8";
-            label8.Size = new Size(71, 28);
-            label8.TabIndex = 10;
-            label8.Text = "Salary";
-            // 
             // txtId
             // 
             txtId.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -186,7 +173,7 @@
             // txtName
             // 
             txtName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtName.Location = new Point(230, 185);
+            txtName.Location = new Point(230, 184);
             txtName.Multiline = true;
             txtName.Name = "txtName";
             txtName.Size = new Size(381, 27);
@@ -204,7 +191,7 @@
             // txtMobile
             // 
             txtMobile.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtMobile.Location = new Point(863, 147);
+            txtMobile.Location = new Point(863, 184);
             txtMobile.Multiline = true;
             txtMobile.Name = "txtMobile";
             txtMobile.Size = new Size(381, 27);
@@ -213,27 +200,18 @@
             // txtAddress
             // 
             txtAddress.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtAddress.Location = new Point(863, 186);
+            txtAddress.Location = new Point(863, 224);
             txtAddress.Multiline = true;
             txtAddress.Name = "txtAddress";
             txtAddress.Size = new Size(381, 27);
             txtAddress.TabIndex = 11;
-            // 
-            // txtSalary
-            // 
-            txtSalary.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSalary.Location = new Point(863, 225);
-            txtSalary.Multiline = true;
-            txtSalary.Name = "txtSalary";
-            txtSalary.Size = new Size(381, 27);
-            txtSalary.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             dateTimePicker1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(228, 263);
+            dateTimePicker1.Location = new Point(863, 140);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(381, 31);
             dateTimePicker1.TabIndex = 12;
@@ -287,13 +265,11 @@
             Controls.Add(btnUpdate);
             Controls.Add(btnInsert);
             Controls.Add(dateTimePicker1);
-            Controls.Add(txtSalary);
             Controls.Add(txtAddress);
             Controls.Add(txtMobile);
             Controls.Add(txtGender);
             Controls.Add(txtName);
             Controls.Add(txtId);
-            Controls.Add(label8);
             Controls.Add(dataGridView1);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -326,13 +302,11 @@
         private Label label6;
         private Label label7;
         private DataGridView dataGridView1;
-        private Label label8;
         private TextBox txtId;
         private TextBox txtName;
         private TextBox txtGender;
         private TextBox txtMobile;
         private TextBox txtAddress;
-        private TextBox txtSalary;
         private DateTimePicker dateTimePicker1;
         private Button btnInsert;
         private Button btnUpdate;
