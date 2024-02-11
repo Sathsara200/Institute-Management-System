@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             panel1 = new Panel();
             panel7 = new Panel();
+            button8 = new Button();
             button7 = new Button();
             button6 = new Button();
             button5 = new Button();
@@ -38,6 +39,7 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
@@ -59,6 +61,7 @@
             label3 = new Label();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -89,6 +92,7 @@
             // panel7
             // 
             panel7.BackColor = Color.Indigo;
+            panel7.Controls.Add(button8);
             panel7.Controls.Add(button7);
             panel7.Controls.Add(button6);
             panel7.Controls.Add(button5);
@@ -96,6 +100,7 @@
             panel7.Controls.Add(button3);
             panel7.Controls.Add(button2);
             panel7.Controls.Add(button1);
+            panel7.Controls.Add(pictureBox11);
             panel7.Controls.Add(pictureBox10);
             panel7.Controls.Add(pictureBox9);
             panel7.Controls.Add(pictureBox8);
@@ -107,6 +112,20 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(258, 493);
             panel7.TabIndex = 2;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.Indigo;
+            button8.FlatStyle = FlatStyle.Popup;
+            button8.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.ForeColor = Color.White;
+            button8.Location = new Point(48, 354);
+            button8.Name = "button8";
+            button8.Size = new Size(208, 44);
+            button8.TabIndex = 1;
+            button8.Text = "Payment Receipt";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // button7
             // 
@@ -201,6 +220,16 @@
             button1.TabIndex = 1;
             button1.Text = "Dashboard";
             button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(2, 355);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(46, 44);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 0;
+            pictureBox11.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -424,6 +453,7 @@
             Text = "Institute Management System";
             panel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -473,5 +503,7 @@
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox10;
+        private Button button8;
+        private PictureBox pictureBox11;
     }
 }

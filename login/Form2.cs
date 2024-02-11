@@ -85,5 +85,11 @@ namespace login
             Form4 frm2 = new Form4();
             frm2.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form7 frm2 = new Form7();
+            frm2.Show();
+        }
     }
 }

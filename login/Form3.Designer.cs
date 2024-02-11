@@ -56,6 +56,8 @@
             label4 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            button5 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
@@ -69,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -76,6 +79,7 @@
             panel1.BackColor = Color.Indigo;
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(pictureBox11);
             panel1.Controls.Add(pictureBox10);
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(button3);
@@ -84,6 +88,7 @@
             panel1.Controls.Add(pictureBox7);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(pictureBox3);
@@ -116,7 +121,7 @@
             // 
             pictureBox10.BorderStyle = BorderStyle.Fixed3D;
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(1, 540);
+            pictureBox10.Location = new Point(1, 539);
             pictureBox10.Margin = new Padding(0);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(44, 47);
@@ -227,9 +232,10 @@
             button4.Name = "button4";
             button4.Size = new Size(215, 47);
             button4.TabIndex = 4;
-            button4.Text = "Exit";
+            button4.Text = "Fee Receipt";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button2
             // 
@@ -422,6 +428,33 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox11
+            // 
+            pictureBox11.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(1, 590);
+            pictureBox11.Margin = new Padding(0);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(44, 47);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 5;
+            pictureBox11.TabStop = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.Indigo;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Popup;
+            button5.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(44, 591);
+            button5.Name = "button5";
+            button5.Size = new Size(215, 47);
+            button5.TabIndex = 4;
+            button5.Text = "Exit";
+            button5.TextAlign = ContentAlignment.MiddleLeft;
+            button5.UseVisualStyleBackColor = false;
+            // 
             // Form3
             // 
             AccessibleRole = AccessibleRole.Window;
@@ -457,6 +490,7 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
         }
 
@@ -489,5 +523,7 @@
         private PictureBox pictureBox10;
         private Button button4;
         private Button button3;
+        private PictureBox pictureBox11;
+        private Button button5;
     }
 }

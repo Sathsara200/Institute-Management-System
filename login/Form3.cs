@@ -50,5 +50,10 @@ namespace login
             Form10 frm2 = new Form10();
             frm2.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
