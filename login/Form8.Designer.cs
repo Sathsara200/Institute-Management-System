@@ -333,7 +333,7 @@
             Controls.Add(comboBox1);
             Controls.Add(label1);
             Name = "Form8";
-            Text = "Form8";
+            Text = "Form12";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
