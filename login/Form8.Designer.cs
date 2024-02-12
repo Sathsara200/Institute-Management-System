@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            comboBox2 = new ComboBox();
             dateTimePicker1 = new DateTimePicker();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
@@ -51,6 +50,7 @@
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
+            textBox5 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -66,15 +66,6 @@
             label1.Text = "Student Attendeace";
             label1.Click += label1_Click;
             // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "12", "13" });
-            comboBox2.Location = new Point(49, 70);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(977, 28);
-            comboBox2.TabIndex = 2;
-            // 
             // dateTimePicker1
             // 
             dateTimePicker1.CustomFormat = "yyyy-MM-dd";
@@ -87,14 +78,16 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(172, 120);
+            textBox1.Location = new Point(172, 164);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(321, 27);
             textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(172, 163);
+            textBox2.Location = new Point(172, 123);
+            textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(321, 27);
             textBox2.TabIndex = 5;
@@ -102,6 +95,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(172, 207);
+            textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(321, 27);
             textBox3.TabIndex = 5;
@@ -109,6 +103,7 @@
             // textBox4
             // 
             textBox4.Location = new Point(705, 123);
+            textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(321, 27);
             textBox4.TabIndex = 5;
@@ -116,6 +111,7 @@
             // textBox7
             // 
             textBox7.Location = new Point(705, 210);
+            textBox7.Multiline = true;
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(321, 27);
             textBox7.TabIndex = 5;
@@ -136,6 +132,7 @@
             // textBox8
             // 
             textBox8.Location = new Point(172, 251);
+            textBox8.Multiline = true;
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(321, 27);
             textBox8.TabIndex = 5;
@@ -151,6 +148,7 @@
             button3.TabIndex = 4;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -163,6 +161,7 @@
             button4.TabIndex = 4;
             button4.Text = "All";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -175,6 +174,7 @@
             button5.TabIndex = 4;
             button5.Text = "Update";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -199,14 +199,15 @@
             button7.TabIndex = 4;
             button7.Text = "Insert";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(49, 321);
+            dataGridView1.Location = new Point(49, 297);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1111, 117);
+            dataGridView1.Size = new Size(1111, 141);
             dataGridView1.TabIndex = 6;
             // 
             // label2
@@ -214,7 +215,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Window;
-            label2.Location = new Point(49, 123);
+            label2.Location = new Point(49, 165);
             label2.Name = "label2";
             label2.Size = new Size(68, 28);
             label2.TabIndex = 7;
@@ -226,7 +227,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.Window;
-            label3.Location = new Point(49, 163);
+            label3.Location = new Point(49, 122);
             label3.Name = "label3";
             label3.Size = new Size(33, 28);
             label3.TabIndex = 7;
@@ -293,12 +294,21 @@
             label8.Text = "Grade";
             label8.Click += label2_Click;
             // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(49, 70);
+            textBox5.Multiline = true;
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(992, 29);
+            textBox5.TabIndex = 8;
+            // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1205, 450);
+            Controls.Add(textBox5);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -320,7 +330,6 @@
             Controls.Add(button5);
             Controls.Add(button3);
             Controls.Add(dateTimePicker1);
-            Controls.Add(comboBox2);
             Controls.Add(label1);
             Name = "Form8";
             Text = "Form12";
@@ -332,7 +341,6 @@
         #endregion
 
         private Label label1;
-        private ComboBox comboBox2;
         private DateTimePicker dateTimePicker1;
         private TextBox textBox1;
         private TextBox textBox2;
@@ -354,5 +362,6 @@
         private Label label6;
         private Label label7;
         private Label label8;
+        private TextBox textBox5;
     }
 }

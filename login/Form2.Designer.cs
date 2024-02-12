@@ -166,6 +166,7 @@
             button5.TabIndex = 1;
             button5.Text = "Student Attendance";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 

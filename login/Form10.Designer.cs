@@ -182,7 +182,7 @@
             // txtGender
             // 
             txtGender.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtGender.Location = new Point(230, 224);
+            txtGender.Location = new Point(230, 225);
             txtGender.Multiline = true;
             txtGender.Name = "txtGender";
             txtGender.Size = new Size(381, 27);
