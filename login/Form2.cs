@@ -91,5 +91,11 @@ namespace login
             Form7 frm2 = new Form7();
             frm2.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form9 frm2 = new Form9();
+            frm2.Show();
+        }
     }
 }
