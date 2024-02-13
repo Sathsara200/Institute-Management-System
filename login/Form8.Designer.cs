@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             label1 = new Label();
             dateTimePicker1 = new DateTimePicker();
             textBox1 = new TextBox();
@@ -335,6 +336,7 @@
             Controls.Add(button3);
             Controls.Add(dateTimePicker1);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form8";
             Text = "ASCEND EDUCATION CENTER : )";
             Load += Form8_Load_1;

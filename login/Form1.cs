@@ -32,7 +32,7 @@ namespace login
         {
             if (textUsername.Text == "Admin" && textPassword.Text == "Admin123")
             {
-                MessageBox.Show("Welcome admin ");
+                MessageBox.Show("Welcome Admin", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Form2 frm1 = new Form2();
                 frm1.Show();
                 this.Hide();
@@ -40,7 +40,7 @@ namespace login
            
             else
             {
-                MessageBox.Show("Login Error");
+                MessageBox.Show("Login Error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textUsername.Text = "";
                 textPassword.Clear();
                 textUsername.Focus();
