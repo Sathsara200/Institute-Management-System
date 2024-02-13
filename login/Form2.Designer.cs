@@ -139,6 +139,7 @@
             button7.TabIndex = 1;
             button7.Text = "Payment Details";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button6
             // 

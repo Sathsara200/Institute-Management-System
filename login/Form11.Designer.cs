@@ -51,6 +51,7 @@
             button5 = new Button();
             label8 = new Label();
             dataGridView1 = new DataGridView();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -226,37 +227,40 @@
             button2.TabIndex = 4;
             button2.Text = "Insert";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.BackColor = Color.BlueViolet;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(821, 225);
+            button3.Location = new Point(821, 217);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 4;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
             button4.BackColor = Color.BlueViolet;
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(821, 174);
+            button4.Location = new Point(821, 171);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 4;
             button4.Text = "Update";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
             button5.BackColor = Color.BlueViolet;
             button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(821, 276);
+            button5.Location = new Point(821, 305);
             button5.Name = "button5";
             button5.Size = new Size(94, 29);
             button5.TabIndex = 4;
@@ -283,12 +287,22 @@
             dataGridView1.Size = new Size(1222, 178);
             dataGridView1.TabIndex = 5;
             // 
+            // button6
+            // 
+            button6.Location = new Point(821, 261);
+            button6.Name = "button6";
+            button6.Size = new Size(94, 29);
+            button6.TabIndex = 6;
+            button6.Text = "button6";
+            button6.UseVisualStyleBackColor = true;
+            // 
             // Form11
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1338, 530);
+            Controls.Add(button6);
             Controls.Add(dataGridView1);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -345,5 +359,6 @@
         private Button button5;
         private Label label8;
         private DataGridView dataGridView1;
+        private Button button6;
     }
 }
