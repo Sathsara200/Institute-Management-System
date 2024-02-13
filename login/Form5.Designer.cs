@@ -380,7 +380,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form5";
-            Text = "Ascend Education Center";
+            Text = "ASCEND EDUCATION CENTER : )";
             Load += Form5_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);

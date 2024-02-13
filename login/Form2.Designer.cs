@@ -453,7 +453,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form2";
-            Text = "Institute Management System";
+            Text = "ASCEND EDUCATION CENTER : )";
             panel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();

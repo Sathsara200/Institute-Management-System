@@ -339,7 +339,7 @@
             Controls.Add(label1);
             Controls.Add(dateTimePicker1);
             Name = "Form11";
-            Text = "Form11";
+            Text = "ASCEND EDUCATION CENTER : )";
             Load += Form11_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

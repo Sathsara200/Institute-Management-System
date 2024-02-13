@@ -339,7 +339,7 @@
             Controls.Add(button1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form4";
-            Text = "Ascend Education Center";
+            Text = "ASCEND EDUCATION CENTER : )";
             Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ResumeLayout(false);

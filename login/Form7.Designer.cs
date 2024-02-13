@@ -232,7 +232,7 @@
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             Name = "Form7";
-            Text = "Form7";
+            Text = "ASCEND EDUCATION CENTER : )";
             ResumeLayout(false);
             PerformLayout();
         }

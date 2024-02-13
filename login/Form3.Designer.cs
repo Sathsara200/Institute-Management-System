@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             panel1 = new Panel();
             pictureBox4 = new PictureBox();
+            pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox9 = new PictureBox();
             button3 = new Button();
@@ -39,6 +40,7 @@
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
+            button5 = new Button();
             button4 = new Button();
             button2 = new Button();
             pictureBox3 = new PictureBox();
@@ -56,10 +58,9 @@
             label4 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            button5 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -71,7 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -116,6 +116,18 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(1, 590);
+            pictureBox11.Margin = new Padding(0);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(44, 47);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 5;
+            pictureBox11.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -220,6 +232,21 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.Indigo;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Popup;
+            button5.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(44, 591);
+            button5.Name = "button5";
+            button5.Size = new Size(215, 47);
+            button5.TabIndex = 4;
+            button5.Text = "Exit";
+            button5.TextAlign = ContentAlignment.MiddleLeft;
+            button5.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -428,33 +455,6 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox11
-            // 
-            pictureBox11.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(1, 590);
-            pictureBox11.Margin = new Padding(0);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(44, 47);
-            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox11.TabIndex = 5;
-            pictureBox11.TabStop = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.Indigo;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(44, 591);
-            button5.Name = "button5";
-            button5.Size = new Size(215, 47);
-            button5.TabIndex = 4;
-            button5.Text = "Exit";
-            button5.TextAlign = ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = false;
-            // 
             // Form3
             // 
             AccessibleRole = AccessibleRole.Window;
@@ -472,11 +472,12 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form3";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form3";
+            Text = "ASCEND EDUCATION CENTER : )";
             WindowState = FormWindowState.Minimized;
             Load += Form3_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -490,7 +491,6 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
         }
 
