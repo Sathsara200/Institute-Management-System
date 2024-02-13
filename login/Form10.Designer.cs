@@ -51,6 +51,7 @@
             button1 = new Button();
             All = new Button();
             button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -289,13 +290,26 @@
             button2.BackColor = Color.Crimson;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(1150, 12);
+            button2.Location = new Point(57, 294);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(106, 29);
             button2.TabIndex = 17;
             button2.Text = "Log out";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.BlueViolet;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(189, 294);
+            button3.Name = "button3";
+            button3.Size = new Size(106, 29);
+            button3.TabIndex = 18;
+            button3.Text = "Back";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Form10
             // 
@@ -303,6 +317,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1296, 537);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(All);
@@ -359,5 +374,6 @@
         private Button button1;
         private Button All;
         private Button button2;
+        private Button button3;
     }
 }

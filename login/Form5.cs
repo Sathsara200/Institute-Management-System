@@ -171,5 +171,18 @@ namespace login
             textAddress.Text = "";
             textId.Text = "";
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 back = new Form2();
+            back.Show();
+        }
     }
 }
+

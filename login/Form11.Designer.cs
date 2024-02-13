@@ -53,6 +53,8 @@
             label8 = new Label();
             dataGridView1 = new DataGridView();
             button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -309,12 +311,40 @@
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
+            // button7
+            // 
+            button7.BackColor = Color.BlueViolet;
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.White;
+            button7.Location = new Point(1188, 305);
+            button7.Name = "button7";
+            button7.Size = new Size(94, 29);
+            button7.TabIndex = 7;
+            button7.Text = "Back";
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.Red;
+            button8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.ForeColor = Color.White;
+            button8.Location = new Point(1075, 305);
+            button8.Name = "button8";
+            button8.Size = new Size(94, 29);
+            button8.TabIndex = 7;
+            button8.Text = "Log out";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
+            // 
             // Form11
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1338, 530);
+            Controls.Add(button8);
+            Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(dataGridView1);
             Controls.Add(button5);
@@ -374,5 +404,7 @@
         private Label label8;
         private DataGridView dataGridView1;
         private Button button6;
+        private Button button7;
+        private Button button8;
     }
 }

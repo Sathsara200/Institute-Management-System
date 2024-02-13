@@ -55,6 +55,8 @@
             label10 = new Label();
             button1 = new Button();
             button2 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -344,6 +346,32 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.Red;
+            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(57, 317);
+            button4.Name = "button4";
+            button4.Size = new Size(106, 29);
+            button4.TabIndex = 12;
+            button4.Text = "Log out";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.BlueViolet;
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(177, 317);
+            button5.Name = "button5";
+            button5.Size = new Size(106, 29);
+            button5.TabIndex = 12;
+            button5.Text = "Back";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -351,6 +379,8 @@
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.Indigo;
             ClientSize = new Size(1296, 537);
+            Controls.Add(button5);
+            Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dataGridView2);
@@ -415,5 +445,7 @@
         private Label label10;
         private Button button1;
         private Button button2;
+        private Button button4;
+        private Button button5;
     }
 }

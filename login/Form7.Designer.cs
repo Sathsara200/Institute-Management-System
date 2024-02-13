@@ -46,6 +46,8 @@
             btnPrint = new Button();
             printDocument1 = new System.Drawing.Printing.PrintDocument();
             printDialog1 = new PrintDialog();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -165,32 +167,35 @@
             // 
             // btnGenarate
             // 
+            btnGenarate.BackColor = Color.BlueViolet;
             btnGenarate.FlatStyle = FlatStyle.Popup;
             btnGenarate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGenarate.ForeColor = Color.White;
-            btnGenarate.Location = new Point(284, 432);
+            btnGenarate.Location = new Point(315, 432);
             btnGenarate.Name = "btnGenarate";
             btnGenarate.Size = new Size(98, 34);
             btnGenarate.TabIndex = 14;
             btnGenarate.Text = "Genarate";
-            btnGenarate.UseVisualStyleBackColor = true;
+            btnGenarate.UseVisualStyleBackColor = false;
             btnGenarate.Click += btnGenarate_Click;
             // 
             // btnReset
             // 
+            btnReset.BackColor = Color.BlueViolet;
             btnReset.FlatStyle = FlatStyle.Popup;
             btnReset.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnReset.ForeColor = Color.White;
-            btnReset.Location = new Point(421, 432);
+            btnReset.Location = new Point(439, 432);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(98, 34);
             btnReset.TabIndex = 15;
             btnReset.Text = "Reset";
-            btnReset.UseVisualStyleBackColor = true;
+            btnReset.UseVisualStyleBackColor = false;
             btnReset.Click += btnReset_Click;
             // 
             // btnPrint
             // 
+            btnPrint.BackColor = Color.BlueViolet;
             btnPrint.FlatStyle = FlatStyle.Popup;
             btnPrint.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnPrint.ForeColor = Color.White;
@@ -199,7 +204,7 @@
             btnPrint.Size = new Size(98, 34);
             btnPrint.TabIndex = 16;
             btnPrint.Text = "Print";
-            btnPrint.UseVisualStyleBackColor = true;
+            btnPrint.UseVisualStyleBackColor = false;
             btnPrint.Click += btnPrint_Click;
             // 
             // printDocument1
@@ -210,12 +215,39 @@
             // 
             printDialog1.UseEXDialog = true;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Red;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(64, 432);
+            button1.Name = "button1";
+            button1.Size = new Size(98, 34);
+            button1.TabIndex = 17;
+            button1.Text = "Log out";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.BlueViolet;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(190, 432);
+            button2.Name = "button2";
+            button2.Size = new Size(98, 34);
+            button2.TabIndex = 17;
+            button2.Text = "Back";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form7
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1338, 529);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(btnPrint);
             Controls.Add(btnReset);
             Controls.Add(btnGenarate);
@@ -258,5 +290,7 @@
         private Button btnPrint;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintDialog printDialog1;
+        private Button button1;
+        private Button button2;
     }
 }

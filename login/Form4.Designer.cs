@@ -52,6 +52,8 @@
             dateTimePicker3 = new DateTimePicker();
             button6 = new Button();
             button2 = new Button();
+            button7 = new Button();
+            button8 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             SuspendLayout();
             // 
@@ -308,12 +310,40 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // button7
+            // 
+            button7.BackColor = Color.Red;
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.White;
+            button7.Location = new Point(57, 316);
+            button7.Name = "button7";
+            button7.Size = new Size(107, 30);
+            button7.TabIndex = 10;
+            button7.Text = "Log out";
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.BlueViolet;
+            button8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.ForeColor = Color.White;
+            button8.Location = new Point(186, 316);
+            button8.Name = "button8";
+            button8.Size = new Size(107, 30);
+            button8.TabIndex = 10;
+            button8.Text = "Back";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1278, 530);
+            Controls.Add(button8);
+            Controls.Add(button7);
             Controls.Add(button2);
             Controls.Add(button6);
             Controls.Add(dateTimePicker3);
@@ -371,5 +401,7 @@
         private DateTimePicker dateTimePicker3;
         private Button button6;
         private Button button2;
+        private Button button7;
+        private Button button8;
     }
 }

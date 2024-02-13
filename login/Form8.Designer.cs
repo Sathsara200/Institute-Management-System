@@ -52,6 +52,8 @@
             label7 = new Label();
             label8 = new Label();
             textBox5 = new TextBox();
+            button1 = new Button();
+            button8 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -307,12 +309,40 @@
             textBox5.TabIndex = 8;
             textBox5.TextChanged += textBox5_TextChanged;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Red;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(705, 262);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 9;
+            button1.Text = "Log out";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.BlueViolet;
+            button8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.ForeColor = Color.White;
+            button8.Location = new Point(817, 262);
+            button8.Name = "button8";
+            button8.Size = new Size(94, 29);
+            button8.TabIndex = 9;
+            button8.Text = "Back";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
+            // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1205, 450);
+            Controls.Add(button8);
+            Controls.Add(button1);
             Controls.Add(textBox5);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -370,5 +400,7 @@
         private Label label7;
         private Label label8;
         private TextBox textBox5;
+        private Button button1;
+        private Button button8;
     }
 }

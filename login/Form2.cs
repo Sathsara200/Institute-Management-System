@@ -109,5 +109,10 @@ namespace login
             Form11 frm2 = new Form11();
             frm2.Show();
         }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

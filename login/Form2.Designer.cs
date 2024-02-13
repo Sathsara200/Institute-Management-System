@@ -56,6 +56,7 @@
             pictureBoxExpand = new PictureBox();
             pictureBox2 = new PictureBox();
             panel4 = new Panel();
+            panel5 = new Panel();
             buttonLogout = new Button();
             label4 = new Label();
             label3 = new Label();
@@ -395,6 +396,7 @@
             // panel4
             // 
             panel4.BackColor = Color.Indigo;
+            panel4.Controls.Add(panel5);
             panel4.Controls.Add(buttonLogout);
             panel4.Controls.Add(label4);
             panel4.Controls.Add(label3);
@@ -403,6 +405,13 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(925, 125);
             panel4.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            panel5.Location = new Point(0, 121);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(687, 393);
+            panel5.TabIndex = 2;
             // 
             // buttonLogout
             // 
@@ -416,6 +425,7 @@
             buttonLogout.TabIndex = 0;
             buttonLogout.Text = "Log-out";
             buttonLogout.UseVisualStyleBackColor = true;
+            buttonLogout.Click += buttonLogout_Click;
             // 
             // label4
             // 
@@ -508,5 +518,6 @@
         private PictureBox pictureBox10;
         private Button button8;
         private PictureBox pictureBox11;
+        private Panel panel5;
     }
 }

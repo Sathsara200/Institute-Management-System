@@ -167,7 +167,20 @@ namespace login
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 back = new Form2();
+            back.Show();
+        }
     }
-}
+ }
+
  
 

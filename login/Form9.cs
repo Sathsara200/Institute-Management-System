@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace login
@@ -184,5 +184,18 @@ namespace login
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 back = new Form2();
+            back.Show();
+        }
     }
 }
+

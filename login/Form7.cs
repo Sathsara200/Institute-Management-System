@@ -56,12 +56,25 @@ namespace login
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString(txtResult.Text,new Font("Microsoft Sens Serif", 18, FontStyle.Bold),Brushes.Black,new Point(10, 10));
+            e.Graphics.DrawString(txtResult.Text, new Font("Microsoft Sens Serif", 18, FontStyle.Bold), Brushes.Black, new Point(10, 10));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 back = new Form2();
+            back.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
+
