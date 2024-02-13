@@ -50,6 +50,8 @@
             textBox8 = new TextBox();
             label8 = new Label();
             dateTimePicker3 = new DateTimePicker();
+            button6 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             SuspendLayout();
             // 
@@ -71,7 +73,7 @@
             button3.BackColor = Color.BlueViolet;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(1000, 294);
+            button3.Location = new Point(778, 295);
             button3.Name = "button3";
             button3.Size = new Size(106, 29);
             button3.TabIndex = 3;
@@ -84,7 +86,7 @@
             button4.BackColor = Color.BlueViolet;
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(863, 294);
+            button4.Location = new Point(659, 296);
             button4.Name = "button4";
             button4.Size = new Size(106, 29);
             button4.TabIndex = 3;
@@ -147,6 +149,7 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(381, 27);
             textBox6.TabIndex = 5;
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // textBox7
             // 
@@ -162,7 +165,7 @@
             button5.BackColor = Color.BlueViolet;
             button5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(1140, 294);
+            button5.Location = new Point(897, 295);
             button5.Name = "button5";
             button5.Size = new Size(106, 29);
             button5.TabIndex = 6;
@@ -279,12 +282,40 @@
             dateTimePicker3.Size = new Size(381, 27);
             dateTimePicker3.TabIndex = 8;
             // 
+            // button6
+            // 
+            button6.BackColor = Color.BlueViolet;
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(1017, 296);
+            button6.Name = "button6";
+            button6.Size = new Size(106, 28);
+            button6.TabIndex = 9;
+            button6.Text = "All";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.BlueViolet;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(1140, 295);
+            button2.Name = "button2";
+            button2.Size = new Size(106, 28);
+            button2.TabIndex = 9;
+            button2.Text = "Clear";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1278, 530);
+            Controls.Add(button2);
+            Controls.Add(button6);
             Controls.Add(dateTimePicker3);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -308,7 +339,7 @@
             Controls.Add(button1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form4";
-            Text = "Form4";
+            Text = "Ascend Education Center";
             Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ResumeLayout(false);
@@ -338,5 +369,7 @@
         private TextBox textBox8;
         private Label label8;
         private DateTimePicker dateTimePicker3;
+        private Button button6;
+        private Button button2;
     }
 }

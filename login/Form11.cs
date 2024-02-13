@@ -69,7 +69,7 @@ namespace login
 
         private void label7_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -151,6 +151,23 @@ namespace login
             con.Close();
             display();
             MessageBox.Show("Record  successfully deleted ", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            display();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox5.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
 
         }
     }

@@ -48,6 +48,8 @@
             btnInsert = new Button();
             btnUpdate = new Button();
             btnDelete = new Button();
+            button1 = new Button();
+            All = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -221,7 +223,7 @@
             btnInsert.BackColor = Color.BlueViolet;
             btnInsert.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnInsert.ForeColor = Color.White;
-            btnInsert.Location = new Point(863, 294);
+            btnInsert.Location = new Point(669, 294);
             btnInsert.Name = "btnInsert";
             btnInsert.Size = new Size(106, 29);
             btnInsert.TabIndex = 13;
@@ -234,7 +236,7 @@
             btnUpdate.BackColor = Color.BlueViolet;
             btnUpdate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnUpdate.ForeColor = Color.White;
-            btnUpdate.Location = new Point(1000, 294);
+            btnUpdate.Location = new Point(786, 294);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(106, 29);
             btnUpdate.TabIndex = 14;
@@ -247,7 +249,7 @@
             btnDelete.BackColor = Color.BlueViolet;
             btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(1138, 294);
+            btnDelete.Location = new Point(903, 294);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(106, 29);
             btnDelete.TabIndex = 15;
@@ -255,12 +257,41 @@
             btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.BlueViolet;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1139, 294);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 29);
+            button1.TabIndex = 16;
+            button1.Text = "Clear";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // All
+            // 
+            All.BackColor = Color.BlueViolet;
+            All.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            All.ForeColor = Color.White;
+            All.Location = new Point(1021, 294);
+            All.Name = "All";
+            All.Size = new Size(106, 29);
+            All.TabIndex = 16;
+            All.Text = "All";
+            All.UseVisualStyleBackColor = false;
+            All.Click += All_Click;
+            // 
             // Form10
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1296, 537);
+            Controls.Add(dataGridView1);
+            Controls.Add(All);
+            Controls.Add(button1);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
             Controls.Add(btnInsert);
@@ -270,7 +301,6 @@
             Controls.Add(txtGender);
             Controls.Add(txtName);
             Controls.Add(txtId);
-            Controls.Add(dataGridView1);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -283,7 +313,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form10";
-            Text = "Form10";
+            Text = "Ascend Education Center";
             Load += Form10_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -311,5 +341,7 @@
         private Button btnInsert;
         private Button btnUpdate;
         private Button btnDelete;
+        private Button button1;
+        private Button All;
     }
 }

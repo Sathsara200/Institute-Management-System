@@ -161,6 +161,38 @@ namespace login
         {
             display();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form8_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

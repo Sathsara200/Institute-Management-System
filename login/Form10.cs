@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace login
 {
     public partial class Form10 : Form
@@ -166,6 +167,22 @@ namespace login
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void All_Click(object sender, EventArgs e)
+        {
+            display();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtSearch.Text = "";
+            txtId.Text = "";
+            txtGender.Text = "";
+            txtMobile.Text = "";
+            txtAddress.Text = "";
+            txtName.Text = "";
+            
         }
     }
 }

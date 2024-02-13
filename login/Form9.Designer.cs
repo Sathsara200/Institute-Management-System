@@ -46,6 +46,7 @@
             label5 = new Label();
             label6 = new Label();
             label4 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -65,6 +66,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(870, 27);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // txtStatus
             // 
@@ -87,6 +89,7 @@
             txtTAName.Name = "txtTAName";
             txtTAName.Size = new Size(287, 27);
             txtTAName.TabIndex = 2;
+            txtTAName.TextChanged += txtTAName_TextChanged;
             // 
             // txtTAId
             // 
@@ -113,7 +116,7 @@
             buttonClear.BackColor = Color.BlueViolet;
             buttonClear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonClear.ForeColor = Color.White;
-            buttonClear.Location = new Point(987, 245);
+            buttonClear.Location = new Point(987, 277);
             buttonClear.Name = "buttonClear";
             buttonClear.Size = new Size(94, 29);
             buttonClear.TabIndex = 4;
@@ -238,12 +241,27 @@
             label4.TabIndex = 10;
             label4.Text = "Teacher Attendance";
             // 
+            // button1
+            // 
+            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button1.BackColor = Color.BlueViolet;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(987, 239);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 11;
+            button1.Text = "All";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Form9
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1146, 450);
+            Controls.Add(button1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label3);
@@ -290,5 +308,6 @@
         private Label label5;
         private Label label6;
         private Label label4;
+        private Button button1;
     }
 }

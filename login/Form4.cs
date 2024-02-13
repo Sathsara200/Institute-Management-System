@@ -146,6 +146,27 @@ namespace login
             view2();
             MessageBox.Show("Record successfully updated ", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            view2();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox6.Text = "";
+            textBox4.Text = "";
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+            textBox3.Text = "";
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

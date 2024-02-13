@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -54,7 +56,11 @@ namespace login
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = "";
+            txtTAId.Text = "";
+            txtTAName.Text = "";
+            txtTId.Text = "";
+            txtStatus.Text = "";
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
@@ -110,7 +116,7 @@ namespace login
         }
         private bool IsV()
         {
-            if ((txtTAName.Text == string.Empty) || (txtTAId.Text != ""));
+            if ((txtTAName.Text == string.Empty) || (txtTAId.Text != "")) ;
             {
                 MessageBox.Show("Teacher name is required or id is not required", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
@@ -157,11 +163,26 @@ namespace login
             cmd.Parameters.AddWithValue("@status", txtTId.Text);
             cmd.Parameters.AddWithValue("@date", this.dateTimePicker4.Text);
             cmd.Parameters.AddWithValue("@teacher_name", txtTAName.Text);
-            
+
             cmd.ExecuteNonQuery();
             con.Close();
             dall();
             MessageBox.Show("Record successfully updated ", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dall();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTAName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

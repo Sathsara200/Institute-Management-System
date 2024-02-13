@@ -147,6 +147,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(247, 80);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(500, 27);
             textBox1.TabIndex = 2;
@@ -155,6 +156,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(247, 152);
+            textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(500, 27);
             textBox2.TabIndex = 2;
@@ -162,6 +164,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(247, 224);
+            textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(500, 27);
             textBox3.TabIndex = 2;
@@ -169,6 +172,7 @@
             // textBox4
             // 
             textBox4.Location = new Point(247, 261);
+            textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(500, 27);
             textBox4.TabIndex = 2;
@@ -176,6 +180,7 @@
             // textBox5
             // 
             textBox5.Location = new Point(247, 116);
+            textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(500, 27);
             textBox5.TabIndex = 2;
@@ -183,6 +188,7 @@
             // textBox6
             // 
             textBox6.Location = new Point(247, 188);
+            textBox6.Multiline = true;
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(500, 27);
             textBox6.TabIndex = 2;
@@ -199,6 +205,7 @@
             // textBox7
             // 
             textBox7.Location = new Point(997, 78);
+            textBox7.Multiline = true;
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(185, 27);
             textBox7.TabIndex = 3;
@@ -266,6 +273,7 @@
             button5.TabIndex = 4;
             button5.Text = "Clear";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label8
             // 
@@ -289,12 +297,16 @@
             // 
             // button6
             // 
+            button6.BackColor = Color.BlueViolet;
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
             button6.Location = new Point(821, 261);
             button6.Name = "button6";
             button6.Size = new Size(94, 29);
             button6.TabIndex = 6;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
+            button6.Text = "All";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // Form11
             // 

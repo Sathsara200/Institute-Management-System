@@ -83,6 +83,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(321, 27);
             textBox1.TabIndex = 5;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -136,6 +137,7 @@
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(321, 27);
             textBox8.TabIndex = 5;
+            textBox8.TextChanged += textBox8_TextChanged;
             // 
             // button3
             // 
@@ -187,6 +189,7 @@
             button6.TabIndex = 4;
             button6.Text = "Clear";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -301,6 +304,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(992, 29);
             textBox5.TabIndex = 8;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // Form8
             // 
@@ -333,6 +337,7 @@
             Controls.Add(label1);
             Name = "Form8";
             Text = "Form12";
+            Load += Form8_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -53,6 +53,8 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             label10 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -93,7 +95,7 @@
             bttnInsert.BackColor = Color.BlueViolet;
             bttnInsert.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bttnInsert.ForeColor = Color.White;
-            bttnInsert.Location = new Point(863, 306);
+            bttnInsert.Location = new Point(668, 317);
             bttnInsert.Name = "bttnInsert";
             bttnInsert.Size = new Size(106, 29);
             bttnInsert.TabIndex = 3;
@@ -106,7 +108,7 @@
             bttnDelete.BackColor = Color.BlueViolet;
             bttnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bttnDelete.ForeColor = Color.White;
-            bttnDelete.Location = new Point(1138, 306);
+            bttnDelete.Location = new Point(903, 317);
             bttnDelete.Name = "bttnDelete";
             bttnDelete.Size = new Size(106, 29);
             bttnDelete.TabIndex = 3;
@@ -119,7 +121,7 @@
             button3.BackColor = Color.BlueViolet;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(999, 306);
+            button3.Location = new Point(785, 317);
             button3.Name = "button3";
             button3.Size = new Size(106, 29);
             button3.TabIndex = 3;
@@ -316,6 +318,32 @@
             label10.TabIndex = 8;
             label10.Text = "Subject_id";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.BlueViolet;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1021, 317);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 29);
+            button1.TabIndex = 10;
+            button1.Text = "All";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.BlueViolet;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(1138, 317);
+            button2.Name = "button2";
+            button2.Size = new Size(106, 29);
+            button2.TabIndex = 11;
+            button2.Text = "Clear";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -323,6 +351,8 @@
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.Indigo;
             ClientSize = new Size(1296, 537);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(dataGridView2);
             Controls.Add(label10);
             Controls.Add(label8);
@@ -350,7 +380,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form5";
-            Text = "Form5";
+            Text = "Ascend Education Center";
             Load += Form5_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
@@ -383,5 +413,7 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Label label10;
+        private Button button1;
+        private Button button2;
     }
 }

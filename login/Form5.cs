@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace login
 {
@@ -152,6 +153,23 @@ namespace login
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dplay();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textGender.Text = "";
+            textMobile.Text = "";
+            textName.Text = "";
+            txxtSearch.Text = "";
+            textAddress.Text = "";
+            textId.Text = "";
         }
     }
 }
