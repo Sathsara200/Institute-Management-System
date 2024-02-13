@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -231,6 +232,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form7";
             Text = "ASCEND EDUCATION CENTER : )";
             ResumeLayout(false);
