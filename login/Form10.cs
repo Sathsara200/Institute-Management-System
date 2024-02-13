@@ -182,7 +182,12 @@ namespace login
             txtMobile.Text = "";
             txtAddress.Text = "";
             txtName.Text = "";
-            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

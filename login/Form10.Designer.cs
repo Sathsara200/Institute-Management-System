@@ -50,6 +50,7 @@
             btnDelete = new Button();
             button1 = new Button();
             All = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -283,12 +284,26 @@
             All.UseVisualStyleBackColor = false;
             All.Click += All_Click;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.Crimson;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(1150, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 17;
+            button2.Text = "Log out";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form10
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1296, 537);
+            Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(All);
             Controls.Add(button1);
@@ -343,5 +358,6 @@
         private Button btnDelete;
         private Button button1;
         private Button All;
+        private Button button2;
     }
 }
