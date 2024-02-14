@@ -47,11 +47,11 @@
             printDocument1 = new System.Drawing.Printing.PrintDocument();
             printDialog1 = new PrintDialog();
             button1 = new Button();
-            button2 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
@@ -63,6 +63,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
@@ -74,6 +75,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
@@ -85,6 +87,7 @@
             // 
             // lblGrade
             // 
+            lblGrade.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblGrade.AutoSize = true;
             lblGrade.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblGrade.ForeColor = Color.White;
@@ -96,6 +99,7 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
@@ -107,6 +111,7 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
@@ -118,6 +123,7 @@
             // 
             // txtStudentId
             // 
+            txtStudentId.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtStudentId.Location = new Point(284, 111);
             txtStudentId.Multiline = true;
             txtStudentId.Name = "txtStudentId";
@@ -126,6 +132,7 @@
             // 
             // txtSName
             // 
+            txtSName.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtSName.Location = new Point(284, 172);
             txtSName.Multiline = true;
             txtSName.Name = "txtSName";
@@ -134,6 +141,7 @@
             // 
             // txtSuName
             // 
+            txtSuName.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtSuName.Location = new Point(284, 234);
             txtSuName.Multiline = true;
             txtSuName.Name = "txtSuName";
@@ -142,6 +150,7 @@
             // 
             // txtSGrade
             // 
+            txtSGrade.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtSGrade.Location = new Point(284, 292);
             txtSGrade.Multiline = true;
             txtSGrade.Name = "txtSGrade";
@@ -150,6 +159,7 @@
             // 
             // txtSFee
             // 
+            txtSFee.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtSFee.Location = new Point(284, 352);
             txtSFee.Multiline = true;
             txtSFee.Name = "txtSFee";
@@ -158,6 +168,7 @@
             // 
             // txtResult
             // 
+            txtResult.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             txtResult.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtResult.Location = new Point(691, 61);
             txtResult.Name = "txtResult";
@@ -167,6 +178,7 @@
             // 
             // btnGenarate
             // 
+            btnGenarate.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnGenarate.BackColor = Color.BlueViolet;
             btnGenarate.FlatStyle = FlatStyle.Popup;
             btnGenarate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -181,6 +193,7 @@
             // 
             // btnReset
             // 
+            btnReset.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnReset.BackColor = Color.BlueViolet;
             btnReset.FlatStyle = FlatStyle.Popup;
             btnReset.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -195,6 +208,7 @@
             // 
             // btnPrint
             // 
+            btnPrint.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnPrint.BackColor = Color.BlueViolet;
             btnPrint.FlatStyle = FlatStyle.Popup;
             btnPrint.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -217,6 +231,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button1.BackColor = Color.Red;
             button1.ForeColor = Color.White;
             button1.Location = new Point(64, 432);
@@ -227,26 +242,12 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.BackColor = Color.BlueViolet;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(190, 432);
-            button2.Name = "button2";
-            button2.Size = new Size(98, 34);
-            button2.TabIndex = 17;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
             // Form7
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Indigo;
             ClientSize = new Size(1338, 529);
-            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(btnPrint);
             Controls.Add(btnReset);
@@ -291,6 +292,5 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintDialog printDialog1;
         private Button button1;
-        private Button button2;
     }
 }

@@ -56,12 +56,12 @@
             button1 = new Button();
             button2 = new Button();
             button4 = new Button();
-            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // bttnSearch
             // 
+            bttnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             bttnSearch.BackColor = Color.BlueViolet;
             bttnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bttnSearch.ForeColor = Color.White;
@@ -75,6 +75,7 @@
             // 
             // txxtSearch
             // 
+            txxtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txxtSearch.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txxtSearch.Location = new Point(57, 65);
             txxtSearch.Multiline = true;
@@ -94,6 +95,7 @@
             // 
             // bttnInsert
             // 
+            bttnInsert.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             bttnInsert.BackColor = Color.BlueViolet;
             bttnInsert.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bttnInsert.ForeColor = Color.White;
@@ -107,6 +109,7 @@
             // 
             // bttnDelete
             // 
+            bttnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             bttnDelete.BackColor = Color.BlueViolet;
             bttnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bttnDelete.ForeColor = Color.White;
@@ -120,6 +123,7 @@
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button3.BackColor = Color.BlueViolet;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
@@ -133,6 +137,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Window;
@@ -154,6 +159,7 @@
             // 
             // textMobile
             // 
+            textMobile.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textMobile.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textMobile.Location = new Point(863, 186);
             textMobile.Multiline = true;
@@ -164,6 +170,7 @@
             // 
             // textGender
             // 
+            textGender.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textGender.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textGender.Location = new Point(863, 147);
             textGender.Multiline = true;
@@ -174,6 +181,7 @@
             // 
             // textAddress
             // 
+            textAddress.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textAddress.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textAddress.Location = new Point(863, 224);
             textAddress.Multiline = true;
@@ -236,6 +244,7 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.Window;
@@ -271,6 +280,7 @@
             // 
             // dataGridView2
             // 
+            dataGridView2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(57, 352);
             dataGridView2.Name = "dataGridView2";
@@ -301,6 +311,7 @@
             // 
             // textBox2
             // 
+            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBox2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox2.Location = new Point(863, 262);
             textBox2.Multiline = true;
@@ -322,6 +333,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button1.BackColor = Color.BlueViolet;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
@@ -335,6 +347,7 @@
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button2.BackColor = Color.BlueViolet;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
@@ -359,19 +372,6 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
-            // button5
-            // 
-            button5.BackColor = Color.BlueViolet;
-            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(177, 317);
-            button5.Name = "button5";
-            button5.Size = new Size(106, 29);
-            button5.TabIndex = 12;
-            button5.Text = "Back";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
-            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -379,7 +379,6 @@
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.Indigo;
             ClientSize = new Size(1296, 537);
-            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -446,6 +445,5 @@
         private Button button1;
         private Button button2;
         private Button button4;
-        private Button button5;
     }
 }

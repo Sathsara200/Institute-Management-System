@@ -53,13 +53,13 @@
             label8 = new Label();
             dataGridView1 = new DataGridView();
             button6 = new Button();
-            button7 = new Button();
             button8 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.Location = new Point(821, 78);
@@ -207,6 +207,7 @@
             // 
             // textBox7
             // 
+            textBox7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBox7.Location = new Point(997, 78);
             textBox7.Multiline = true;
             textBox7.Name = "textBox7";
@@ -215,6 +216,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button1.BackColor = Color.BlueViolet;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
@@ -228,6 +230,7 @@
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button2.BackColor = Color.BlueViolet;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
@@ -241,6 +244,7 @@
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button3.BackColor = Color.BlueViolet;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
@@ -254,6 +258,7 @@
             // 
             // button4
             // 
+            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button4.BackColor = Color.BlueViolet;
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
@@ -267,6 +272,7 @@
             // 
             // button5
             // 
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button5.BackColor = Color.BlueViolet;
             button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
@@ -280,6 +286,7 @@
             // 
             // label8
             // 
+            label8.Anchor = AnchorStyles.Top;
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = SystemColors.Window;
@@ -291,6 +298,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(60, 340);
             dataGridView1.Name = "dataGridView1";
@@ -300,6 +308,7 @@
             // 
             // button6
             // 
+            button6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button6.BackColor = Color.BlueViolet;
             button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.White;
@@ -311,25 +320,12 @@
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
-            // button7
-            // 
-            button7.BackColor = Color.BlueViolet;
-            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(1188, 305);
-            button7.Name = "button7";
-            button7.Size = new Size(94, 29);
-            button7.TabIndex = 7;
-            button7.Text = "Back";
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
-            // 
             // button8
             // 
             button8.BackColor = Color.Red;
             button8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(1075, 305);
+            button8.Location = new Point(1188, 305);
             button8.Name = "button8";
             button8.Size = new Size(94, 29);
             button8.TabIndex = 7;
@@ -344,7 +340,6 @@
             BackColor = Color.Indigo;
             ClientSize = new Size(1338, 530);
             Controls.Add(button8);
-            Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(dataGridView1);
             Controls.Add(button5);
@@ -404,7 +399,6 @@
         private Label label8;
         private DataGridView dataGridView1;
         private Button button6;
-        private Button button7;
         private Button button8;
     }
 }

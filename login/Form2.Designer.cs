@@ -362,6 +362,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(853, 0);
             pictureBox3.Name = "pictureBox3";
@@ -415,6 +416,7 @@
             // 
             // buttonLogout
             // 
+            buttonLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonLogout.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonLogout.ForeColor = Color.FromArgb(67, 3, 125);
             buttonLogout.Image = Properties.Resources.logout;
